@@ -1,0 +1,17 @@
+.email-container{
+    display: flex;
+    align-items: center;
+}
+
+.iban-container{
+    display: flex;
+    align-items: center;
+}
+
+.country-code{
+    margin-right: 120px;
+}
+
+input::placeholder{
+    color: black;
+}
