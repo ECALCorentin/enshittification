@@ -5,10 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <form>
+        <label for="fname">Prénom</label> <br>
+        <input id="fname" type="text" placeholder="Nom"><br><br>
+
+        <label for="lname">Nom</label> <br>
+        <input id="lname" type="text" value="Prénom"><br><br>
+
+        <label for="address">Adresse</label> <br>
+        <input id="address" type="text"><br><br>
+
+        <div>
+            <label for="number">Numéro de téléphone</label> <br>
+            <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly>
+
+            <div class="keypad">
+                <button type="button" value="1" class="key">1</button>
+                <button type="button" value="2" class="key">2</button>
+                <button type="button" value="3" class="key">3</button>
+                <button type="button" value="4" class="key">4</button>
+                <button type="button" value="5" class="key">5</button>
+                <button type="button" value="6" class="key">6</button>
+                <button type="button" value="7" class="key">7</button>
+                <button type="button" value="8" class="key">8</button>
+                <button type="button" value="9" class="key">9</button>
+                <button type="button" value="0" class="key">0</button>
+            </div>
+        </div> <br>
+
+        <label for="commune-select">Choisissez votre zone de résidence :</label> <br>
+        <select id="commune-select">
+            <option value="">-- Sélectionnez une option --</option>
+        </select> <br> <br>
+
+        <label for="shoe-size">Pointure</label> <br>
+        <input id="shoe-size" type="number"><br><br>
+
+        <label for="license-plate">Plaque d'immatriculation</label> <br>
+        <input id="license-plate" type="number"><br><br>
+
+        <div class="date-container">
+            <label for="trick-input">Date de naissance</label> <br>
+            <input type="text" id="trick-input" maxlength="7" placeholder="JMA/JMA">
+            <p id=" feedback" style="font-size: 12px; margin-top: 5px;"></p>
+        </div>
+
+        <label for="favorite-color">Couleur préférée</label> <br>
+        <input id="favorite-color" type="color"><br><br>
+
+        <div>
+            <label for="email">Email</label>
+            <div class="email-container">
+                <input id="email-prefix" type="email">
+                <p>@</p>
+                <input id="email-suffix" type="email">
+                <input id="email-extension" type="text" placeholder=".com" readonly>
+                <button id="random-extension" type="button" placeholder=".ch">random</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="country-code">IBAN</label> <br>
+            <div class="iban-container">
+                <div id="country-code" style="display: flex; gap: 3px; margin-right: 10px;">
+                    <input type="text" maxlength="1" class="letter-input"
+                        style="width: 25px; text-align: center; text-transform: uppercase;">
+                    <input type="text" maxlength="1" class="letter-input"
+                        style="width: 25px; text-align: center; text-transform: uppercase;">
+                </div>
+
+                <div id="digits-container" style="display: flex; flex-wrap: wrap; gap: 3px;"></div>
+            </div>
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
