@@ -1,0 +1,81 @@
+.conditionContainer
+{
+    width: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.conditionContent
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    max-height: 0px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.conditionContentOpen
+{
+    padding: 20px 20px;
+}
+
+.arrow
+{
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.arrowUp
+{
+    transform: rotate(180deg);
+}
+
+.conditionHeader
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.conditionHeader:hover 
+{
+    background-color: #e0e0e0;
+}
+
+.conditionHeader p{
+    width: auto;
+}
+
+.conditionFooter
+{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+button
+{
+    width: 20%;
+    border: none;
+    border-radius: 0px;
+    padding: 8px 16px;
+    color:rgb(149, 149, 149);
+}
+.buttonActive
+{
+    background-color: rgb(35, 43, 98);
+    color: white;
+    cursor: pointer;
+}
+.buttonActive:hover {
+    background-color: rgb(35, 43, 98);
+    color: white;
+}

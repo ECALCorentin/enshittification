@@ -1,0 +1,129 @@
+.dropDownSectionContainer
+{
+    display: flex;
+    gap: 20px;
+}
+.dropDownSectionContainer p{
+    white-space: nowrap;
+}
+
+
+.fake-select-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.fake-select-trigger {
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.arrow
+{
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.arrowUp
+{
+    transform: rotate(180deg);
+}
+
+
+.fake-options-list {
+    max-height: 0px;
+    transition: all 0.3s ease;
+    overflow-y: scroll;
+    background: white;
+}
+
+.fake-options-list-open
+{
+    max-height: 70px;
+}
+
+/* On rend la barre de scroll minuscule pour que ce soit encore plus dur */
+.fake-options-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.fake-options-list::-webkit-scrollbar-thumb {
+    background: #232b62;
+}
+
+.option-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    /* Empêche le texte de revenir à la ligne */
+}
+
+.option-item-active
+{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: #232b62;
+    color:white;
+}
+
+.option-item:hover {
+    background-color: #e3e3e3;
+    /* Rouge agressif au survol */
+    color: rgb(0, 0, 0);
+}
+
+.buttonInnerRect
+{
+    margin-right: 16px;
+    width: 6px;
+    background-color: #232b62;
+}
+
+.validateButton{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    /* Empêche le texte de revenir à la ligne */
+}
+
+.validateButtonActive{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: #232b62;
+    color:white;
+}
+
+button {
+    width: 20%;
+    border: none;
+    border-radius: 0px;
+    padding: 8px 16px;
+    color: rgb(149, 149, 149);
+}
+
+.nextButton {
+    background-color: rgb(195, 195, 195);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nextButtonActive {
+    background-color: rgb(35, 43, 98);
+    color: white;
+    cursor: pointer;
+}
