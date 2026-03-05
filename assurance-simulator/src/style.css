@@ -1,6 +1,210 @@
-.dropdown{
+*{
+    scroll-behavior: smooth;
+}
+
+html, body, #app, * {
+  font-family: 'Inter', sans-serif !important;
+  color: #110D5E;
+}
+
+R.dropdown{
   width: 80%;
   background-color: grey;
-  height: 200px;
+  max-height: 2000px;
   margin: auto;
+}
+
+.closed{
+  height: 60px;
+  overflow: hidden;
+}
+
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    position:relative;
+}
+
+/*DROPDOWN*/
+
+.dropDownSectionContainer
+{
+    display: flex;
+    gap: 20px;
+}
+.dropDownSectionContainer p{
+    white-space: nowrap;
+}
+
+
+.fake-select-container {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.fake-select-trigger {
+    background: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.arrow
+{
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.arrowUp
+{
+    transform: rotate(180deg);
+}
+
+
+.fake-options-list {
+    max-height: 0px;
+    transition: all 0.3s ease;
+    overflow-y: scroll;
+    background: white;
+}
+
+.fake-options-list-open
+{
+    max-height: 70px;
+}
+
+/* On rend la barre de scroll minuscule pour que ce soit encore plus dur */
+.fake-options-list::-webkit-scrollbar {
+    width: 4px;
+}
+
+.fake-options-list::-webkit-scrollbar-thumb {
+    background: #232b62;
+}
+
+.option-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    /* Empêche le texte de revenir à la ligne */
+}
+
+.option-item-active
+{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: #232b62;
+    color:white;
+}
+
+.option-item:hover {
+    background-color: #e3e3e3;
+    color: rgb(0, 0, 0);
+}
+
+/* .buttonInnerRect
+{
+    margin-right: 16px;
+    width: 6px;
+    background-color: #232b62;
+} */
+
+.validateButton{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+}
+
+.validateButtonActive{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    white-space: nowrap;
+    background-color: #232b62;
+    color:white;
+}
+
+/* button {
+    width: 20%;
+    border: none;
+    border-radius: 0px;
+    padding: 8px 16px;
+    color: rgb(149, 149, 149);
+} */
+
+.nextButton {
+    background-color: rgb(195, 195, 195);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.nextButtonActive {
+    background-color: rgb(35, 43, 98);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*=============================================================================*/
+
+.dropdown-sections{
+    height: 100%;
+}
+
+.dropdown-title{
+    background: linear-gradient(90deg, #FFFFFF 0%, #F7FCFF 32.21%, #F7FCFF 67.31%, #FFFFFF 100%);
+    width: 600px;
+    margin: auto;
+    height: 50px;
+    color: #110D5E;
+    box-shadow: 0px 4px 17px 0px #0000001C;
+    border-radius: 10px;
+}
+
+.dropdown{
+    width: 600px;
+    margin: auto;
+}
+
+h1{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 26px;
+}
+
+.dropdown-title span{
+    color: #05A3E0;
+    padding-right: 12px;
+}
+
+.ageConfirmationContainer, .dropDownSectionContainer{
+    width: 600px;
+    max-height: 600px;
+    margin: auto;
+    background-color: #F9F9F9;
+
+}
+
+
+.dropDownSectionContainer{
+    width: inherit;
+    background-color: #F9F9F9;
+    flex: auto;
+    flex-direction: column;
 }

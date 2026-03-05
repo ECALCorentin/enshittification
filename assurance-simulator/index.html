@@ -13,20 +13,503 @@
 
   <section class="dropdown-sections">
     <div class="dropdown age-confirmation closed">
-      <h1>Age Confirmation</h1>
+      <div class="dropdown-title">
+        <h1><span>1.</span>Age Confirmation</h1>
+      </div>
+      <div class="ageConfirmationContainer">
+        <div class="buttonsContainer">
+          <div>
+            <button class="validateButtonNext next">Next</button>
+            <button class="validateButtonPrevious previous">Previous</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="dropdown reason-selection closed">
-      <h1>Reason Selection</h1>
+
+    <div class="dropdown reason-selection">
+      <div class="dropdown-title">
+        <h1><span>2.</span>Reason for Appeal</h1>
+      </div>
+
+      <div class="dropDownSectionContainer">
+        <p>Pourquoi voulez-vous faire appel à notre assurance (soyez précis)</p>
+        <div class="fake-select-container">
+          <div class="fake-select-trigger">
+            <div style="display: flex">
+              <div class="buttonInnerRect"></div>
+              <p class="choice">-- Veuillez choisir une raison --</p>
+            </div>
+            <img class="arrow" src="/imgs/fleche.svg" alt="" />
+          </div>
+
+          <div class="fake-options-list">
+            <div class="option-item">
+              Mon grille-pain a tenté de communiquer avec l'au-delà
+            </div>
+            <div class="option-item">
+              Mon frigo fait un bruit de jugement constant
+            </div>
+            <div class="option-item">
+              Le micro-ondes a créé un mini trou noir après une fourchette oubliée
+            </div>
+            <div class="option-item">
+              Mon aspirateur robot a pris la fuite par la porte d'entrée
+            </div>
+            <div class="option-item">
+              La machine à laver a mangé mon bouton de chemise préféré
+            </div>
+            <div class="option-item">
+              Mon thermostat refuse de chauffer si je ne lui dis pas "S'il te
+              plaît"
+            </div>
+            <div class="option-item">
+              La bouilloire chante de l'opéra à 3h du matin
+            </div>
+            <div class="option-item">Fuite d'eau imaginaire mais très humide</div>
+            <div class="option-item">
+              Le fer à repasser a marqué mon t-shirt d'un signe occulte
+            </div>
+            <div class="option-item">
+              Mon four me demande mon mot de passe pour cuire une pizza
+            </div>
+
+            <div class="option-item">
+              Je suis coincé dans une étagère Kallax mal montée depuis 48h
+            </div>
+            <div class="option-item">
+              J'ai marché sur un Lego et j'envisage des poursuites
+            </div>
+            <div class="option-item">
+              Ma chaise de bureau tourne mais uniquement vers la gauche
+            </div>
+            <div class="option-item">
+              Le canapé a englouti mes clés, mon téléphone et mon chat
+            </div>
+            <div class="option-item">
+              Une étagère s'est suicidée sans raison apparente
+            </div>
+            <div class="option-item">
+              Le papier peint se décolle car il n'aime pas mes goûts musicaux
+            </div>
+            <div class="option-item">
+              Mon tournevis a fondu sous le regard du voisin
+            </div>
+            <div class="option-item">
+              La porte du placard refuse de s'ouvrir les jours impairs
+            </div>
+            <div class="option-item">
+              Ma table de nuit me grignote les doigts de pieds
+            </div>
+            <div class="option-item">
+              Mon tapis s'est enroulé autour de ma dignité
+            </div>
+
+            <div class="option-item">
+              Un pigeon me regarde fixement depuis mardi
+            </div>
+            <div class="option-item">
+              Mon chat a commandé 400kg de thon sur Amazon
+            </div>
+            <div class="option-item">
+              Une araignée refuse de payer sa part du loyer
+            </div>
+            <div class="option-item">
+              Échec des négociations de paix avec une guêpe
+            </div>
+            <div class="option-item">
+              Un écureuil m'extorque des noisettes sous la menace
+            </div>
+            <div class="option-item">
+              Ma plante grasse est morte de déshydratation alors qu'elle baignait
+              dans l'eau
+            </div>
+            <div class="option-item">
+              Le poisson rouge a appris à éteindre la lumière
+            </div>
+            <div class="option-item">
+              Une fourmi m'a manqué de respect verbalement
+            </div>
+            <div class="option-item">
+              Mon chien refuse de sortir sans son smoking
+            </div>
+            <div class="option-item">
+              Une mouche s'est crashée sur ma vitre sans assurance
+            </div>
+
+            <div class="option-item">
+              Un portail dimensionnel a aspiré mes chaussettes
+            </div>
+            <div class="option-item">Collision avec moi-même venant du futur</div>
+            <div class="option-item">
+              La gravité a fonctionné trop fort d'un coup
+            </div>
+            <div class="option-item">L'ombre de mon voisin a volé ma pelouse</div>
+            <div class="option-item">
+              L'univers a "glitché" et je traverse les murs (uniquement les
+              lundis)
+            </div>
+            <div class="option-item">Mon fantôme ne fait pas sa vaisselle</div>
+            <div class="option-item">
+              Enlèvement par des aliens mais ils m'ont ramené en retard au travail
+            </div>
+            <div class="option-item">
+              J'ai vu la couleur du vent et c'était moche
+            </div>
+            <div class="option-item">
+              La lune est trop brillante, je porte plainte contre le système
+              solaire
+            </div>
+            <div class="option-item">
+              Inversion accidentelle de ma polarité magnétique
+            </div>
+
+            <div class="option-item">
+              Ma coupe de cheveux est une insulte à la dignité
+            </div>
+            <div class="option-item">C'est la faute de Mercure en rétrograde</div>
+            <div class="option-item">Mon reflet refuse de me copier ce matin</div>
+            <div class="option-item">
+              On m'a spoilé la fin d'une série que je n'ai pas commencée
+            </div>
+            <div class="option-item">
+              Mon horoscope m'a prédit une mauvaise journée et je demande
+              réparation
+            </div>
+            <div class="option-item">
+              Je souffre d'un manque de charisme passager
+            </div>
+            <div class="option-item">
+              Mon ombre est plus grande que moi, c'est intimidant
+            </div>
+            <div class="option-item">
+              Je n'arrive pas à m'aimer quand il pleut
+            </div>
+            <div class="option-item">Mon ego a pris un coup de soleil</div>
+            <div class="option-item">
+              Sensation globale d'être dans un jeu vidéo mal codé
+            </div>
+
+            <div class="option-item">
+              J'ai glissé sur une plaque d'enthousiasme
+            </div>
+            <div class="option-item">Le facteur ne m'aime pas, c'est un fait</div>
+            <div class="option-item">
+              J'ai perdu mon temps et je veux qu'on me le rembourse
+            </div>
+            <div class="option-item">
+              Ma connexion internet est si lente qu'elle remonte dans le passé
+            </div>
+            <div class="option-item">
+              Le bouton "Entrée" de mon clavier est trop autoritaire
+            </div>
+            <div class="option-item">
+              J'ai confondu mon assurance avec un centre d'appel thérapeutique
+            </div>
+            <div class="option-item">Ma vie manque d'effets spéciaux</div>
+            <div class="option-item">
+              Je ne comprends pas l'existence du brocoli
+            </div>
+            <div class="option-item">
+              La météo ne correspond pas à ma tenue du jour
+            </div>
+            <div class="option-item">
+              Je suis allergique au travail, certificat médical à l'appui
+            </div>
+
+            <div class="option-item">
+              Un pigeon me regarde fixement depuis mardi (Bis)
+            </div>
+            <div class="option-item">
+              Mon grille-pain a tenté de communiquer avec l'au-delà (Version 2)
+            </div>
+            <div class="option-item">
+              Mon frigo fait toujours un bruit de jugement
+            </div>
+            <div class="option-item">J'ai marché sur un Lego (Encore lui)</div>
+
+            <div class="option-item">
+              Perte de 12 centimes dans une bouche d'égout
+            </div>
+            <div class="option-item">Mon yaourt était périmé de 12 minutes</div>
+            <div class="option-item">
+              Le bruit des gens qui mâchent me rend violent
+            </div>
+            <div class="option-item">
+              Ma télécommande ne commande plus rien du tout
+            </div>
+            <div class="option-item">
+              Mon chargeur de téléphone est trop court de 3cm
+            </div>
+            <div class="option-item">J'ai trop de talent et ça me pèse</div>
+            <div class="option-item">
+              La tartine est tombée du côté du beurre, complot mondial
+            </div>
+            <div class="option-item">L'encre de mon stylo est trop bleue</div>
+            <div class="option-item">
+              Mon slip a perdu son élasticité lors d'un saut de joie
+            </div>
+            <div class="option-item">J'ai oublié ce que je voulais dire</div>
+
+            <div class="option-item">
+              Surcharge émotionnelle face à un coucher de soleil moyen
+            </div>
+            <div class="option-item">
+              Mon réveil a sonné alors que je dormais, harcèlement sonore
+            </div>
+            <div class="option-item">
+              Les pigeons préparent une révolution, j'ai des preuves
+            </div>
+            <div class="option-item">
+              Mon ombre a essayé de me faire un croche-pied
+            </div>
+            <div class="option-item">
+              Le chat du voisin me juge à travers la fenêtre
+            </div>
+            <div class="option-item">
+              J'ai confondu le sucre et le sel dans mon café, préjudice gustatif
+            </div>
+            <div class="option-item">
+              Mon parapluie s'est retourné, humiliation publique
+            </div>
+            <div class="option-item">Je suis trop beau pour payer mes impôts</div>
+            <div class="option-item">
+              Ma vie ressemble à une pub pour du détergent
+            </div>
+            <div class="option-item">Le silence fait trop de bruit</div>
+            <div class="option-item">
+              Ma couette refuse de me laisser sortir le matin
+            </div>
+            <div class="option-item">
+              Mon double numérique a plus de succès que moi
+            </div>
+            <div class="option-item">
+              J'ai perdu un débat contre un enfant de 5 ans
+            </div>
+            <div class="option-item">L'eau mouille trop</div>
+            <div class="option-item">
+              Le vent m'a décoiffé sans mon consentement
+            </div>
+            <div class="option-item">
+              Mon café est devenu froid pendant que je lisais cette liste
+            </div>
+            <div class="option-item">
+              J'ai fini de scroller et je n'ai toujours pas trouvé la bonne raison
+            </div>
+            <div class="option-item">
+              Autre (précisez par courrier recommandé en 12 exemplaires)
+            </div>
+            <div class="option-item">
+              La raison n°84 était pourtant très claire
+            </div>
+            <div class="option-item">Ceci n'est pas une raison</div>
+            <div class="option-item">Erreur 404 : Raison non trouvée</div>
+            <div class="option-item">Je veux juste parler à quelqu'un</div>
+            <div class="option-item">Parce que pourquoi pas ?</div>
+            <div class="validateButton">→ VALIDER</div>
+          </div>
+        </div>
+        <button class="nextButton">Suite</button>
+      </div>
     </div>
+
+
     <div class="dropdown form closed">
-      <h1>Form</h1>
+      <div class="dropdown-title">
+        <h1><span>3.</span>Form</h1>
+      </div>
+
+      <form>
+        <label for="fname">Prénom</label> <br>
+        <input id="fname" type="text" placeholder="Nom"><br><br>
+
+        <label for="lname">Nom</label> <br>
+        <input id="lname" type="text" value="Prénom"><br><br>
+
+        <label for="address">Adresse</label> <br>
+        <input id="address" type="text" value="Rue"><br><br>
+
+        <div>
+          <label for="number">Numéro de téléphone</label> <br>
+          <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly>
+
+          <div class="keypad">
+            <button type="button" value="1" class="key">1</button>
+            <button type="button" value="2" class="key">2</button>
+            <button type="button" value="3" class="key">3</button>
+            <button type="button" value="4" class="key">4</button>
+            <button type="button" value="5" class="key">5</button>
+            <button type="button" value="6" class="key">6</button>
+            <button type="button" value="7" class="key">7</button>
+            <button type="button" value="8" class="key">8</button>
+            <button type="button" value="9" class="key">9</button>
+            <button type="button" value="0" class="key">0</button>
+          </div>
+        </div> <br>
+
+        <div>
+          <label for="commune-select">Ville</label>
+          <select id="commune-select">
+            <option value="">-- Sélectionnez une option --</option>
+          </select> <br> <br>
+        </div>
+
+        <div>
+          <label for="shoe-size">Pointure</label>
+          <input id="shoe-size" type="number">
+        </div> <br>
+
+        <div>
+          <label for="license-plate">Plaque d'immatriculation</label>
+          <input id="license-plate" type="number">
+        </div> <br>
+
+        <div class="date-container">
+          <label for="trick-input">Date de naissance</label>
+          <input type="text" id="trick-input" maxlength="7" placeholder="JMA/JMA">
+          <p id=" feedback"></p>
+        </div> <br>
+
+        <label for="favorite-color">Couleur préférée</label>
+        <input id="favorite-color" type="color">
+
+        <div>
+          <label for="email">Email</label>
+          <div class="email-container">
+            <input id="email-prefix" type="email">
+            <p>@</p>
+            <input id="email-suffix" type="email">
+            <input id="email-extension" type="text" placeholder=".com" readonly>
+            <button id="random-extension" type="button" placeholder=".ch">random</button>
+          </div>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="country-code">IBAN</label>
+          <div class="iban-container">
+            <div id="country-code">
+              <input type="text" maxlength="1" class="letter-input" placeholder="C">
+              <input type="text" maxlength="1" class="letter-input" placeholder="H">
+            </div>
+
+            <div id="digits-container" style="display: flex; flex-wrap: wrap; gap: 3px;"></div>
+          </div>
+        </div>
+
+      </form>
+
+      <button id="form-next">Next</button>
+      <button id="form-previous">Previous</button>
     </div>
+
+
     <div class="dropdown disclaimer closed">
-      <h1>Disclaimer</h1>
+      <div class="dropdown-title">
+        <h1><span>4.</span>Disclaimer</h1>
+      </div>
+
+      <div class="conditionContainer">
+        <div class="conditionHeader">
+          <p>Conditions d'Utilisation</p>
+          <img class="arrow" src="/imgs/fleche.svg" alt="fleche" />
+        </div>
+        <div class="conditionContent">
+          <p>
+            CONVENTIONS SPÉCIALES : CONTRAT D'ASSURANCE MULTIRISQUE INTÉGRALE
+            (RÉF. AX-990-BIS) TITRE PREMIER : DU CADRE JURIDIQUE ET DES
+            DÉFINITIONS PRÉALABLES <br />
+            Article 1.1 : Champ d'application des définitions Aux fins de
+            l'interprétation des présentes, les termes définis ci-après, qu'ils
+            soient employés au singulier ou au pluriel, prévalent sur toute
+            définition usuelle, dictionnaire de langue française ou usage
+            professionnel, nonobstant toute disposition contraire figurant dans
+            les Conditions Particulières, sauf dérogation expresse et écrite
+            signée par un mandataire social de la Compagnie. Sinistre : Tout
+            événement non intentionnel de la part de l'Assuré, présentant un
+            caractère aléatoire, soudain et imprévisible, trouvant sa cause
+            déterminante dans un fait générateur unique, sous réserve des
+            exclusions stipulées aux Articles 4.2.1 à 4.2.8. Tiers : Toute
+            personne physique ou morale autre que l'Assuré, son conjoint non
+            séparé de corps, ses ascendants ou descendants en ligne directe, ainsi
+            que toute personne préposée à son service dans l'exercice de ses
+            fonctions. <br />
+            TITRE II : DES GARANTIES ET DE LA SUBROGATION <br />
+            Article 2.4 : Modalités de mise en œuvre de la garantie « Dommages
+            Immatériels Non Consécutifs » La garantie ne s'exerce qu'après
+            épuisement des franchises prévues au tableau des garanties annexé aux
+            présentes, et sous réserve que l'Assuré apporte la preuve formelle du
+            lien de causalité direct et exclusif entre l'événement générateur et
+            le préjudice pécuniaire subi. Par dérogation aux dispositions de
+            l'Article L. 121-12 du Code des Assurances, l'Assureur est subrogé, à
+            concurrence de l'indemnité payée par lui, dans les droits et actions
+            de l'Assuré contre tout tiers responsable. <br />
+            Toutefois, cette subrogation ne saurait s'appliquer si le tiers
+            responsable est un descendant, un ascendant, un allié en ligne directe
+            de l'Assuré, ou toute personne vivant habituellement au foyer de
+            l'Assuré, sauf en cas de malveillance caractérisée ou d'implication
+            d'un véhicule terrestre à moteur tel que défini par la Loi n° 85-677
+            du 5 juillet 1985. <br />
+            TITRE III : DES EXCLUSIONS GÉNÉRALES ET PARTICULIÈRES <br />
+            <br />
+            Article 3.2 : Exclusions relatives à la nature des biens Sont
+            formellement exclus de toute prise en charge, sans que cette liste ne
+            puisse être considérée comme limitative : Les dommages résultant de
+            l'usure lente, de la vétusté, de l'oxydation, de la corrosion, de
+            l'incrustation de calcaire ou de tout phénomène climatique à évolution
+            lente n'ayant pas le caractère d'un événement naturel d'intensité
+            anormale au sens de la législation sur les catastrophes naturelles.
+            Les pertes subies par l'Assuré du fait de la privation de jouissance,
+            de la dépréciation vénale, ou de toute interruption d'activité, sauf
+            si une option « Pertes d'Exploitation » a été souscrite et validée par
+            un avenant spécifique conforme aux stipulations de l'Article 7.4. Les
+            dommages causés par des micro-organismes, moisissures, spores ou
+            toutes particules fongiques, quand bien même ceux-ci résulteraient
+            d'un dégât des eaux garanti, si ledit dégât n'a pas été déclaré dans
+            un délai de quarante-huit (48) heures ouvrées. TITRE IV : DE LA
+            DÉCLARATION ET DE L'INSTRUCTION DU SINISTRE Article 4.5 : Formalisme
+            de la preuve et expertise En cas de sinistre, l'Assuré est tenu, sous
+            peine de déchéance de garantie si le retard cause un préjudice à la
+            Compagnie, de fournir un état estimatif des pertes, certifié par un
+            expert indépendant inscrit sur la liste nationale des experts agréés,
+            dont les honoraires resteront à la charge exclusive de l'Assuré, sauf
+            mention contraire aux Conditions Particulières. L'Assuré devra
+            justifier de l'existence
+            <span>J'accepte les conditions<input class="checkbox" type="checkbox" /></span>
+            et de la valeur des biens par tous moyens de preuve probants,
+            notamment : factures d'achat originales (les tickets de caisse
+            thermique ne sont pas admis après un délai de 6 mois pour cause
+            d'effacement de l'encre), inventaires notariés, ou certificats
+            d'authenticité émanant d'organismes certifiés ISO 9001. TITRE V : DE
+            LA RÉSILIATION ET DES DÉLAIS DE RECOURS Article 5.1 : Préavis et
+            tacite reconduction Le présent contrat est conclu pour une durée d'un
+            an à compter de la date d'effet mentionnée aux Conditions
+            Particulières. Il se renouvelle par tacite reconduction, pour des
+            périodes successives d'un an, à chaque date anniversaire, sauf
+            dénonciation par l'une ou l'autre des parties, notifiée par lettre
+            recommandée avec accusé de réception, adressée au siège social de la
+            Compagnie au moins deux (2) mois avant la date d'échéance.
+            Conformément à l'Article L. 113-15-1 du Code des Assurances (Loi
+            Châtel), l'Assuré dispose toutefois d'un délai de vingt (20) jours à
+            compter de la date d'envoi de l'avis d'échéance pour dénoncer la
+            reconduction du contrat, le cachet de la poste faisant foi de la date
+            d'envoi de ladite notification de la Compagnie.
+          </p>
+        </div>
+        <div class="conditionFooter">
+          <p>Acceptez les conditions pour continuer</p>
+          <button class="nextButton">Suite</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="src/js/main.js"></script>
+  <script src="src/js/ageCheck.js"></script>
+  <script src="src/js/reasonList.js"></script>
+  <script src="src/js/checkConditions.js"></script>
+  <script src="src/js/form.js"></script>
 </body>
 
 </html>
