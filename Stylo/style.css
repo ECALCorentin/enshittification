@@ -1,0 +1,50 @@
+canvas{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+body {
+    background: #1a1a1a;
+    color: #ccc;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signature-wrapper {
+    text-align: center;
+}
+
+canvas {
+    background: #fdfdfd;
+    border: 2px inset #555;
+    /* Un curseur stylo si possible */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    touch-action: none;
+}
+
+.controls {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+#ink-status {
+    color: #ff4757;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}

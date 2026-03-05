@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chaos-picker">
+      <div class="clock-container">
+        <div id="clock" class="clock">
+          <div id="hand-hour" class="hand hour" data-type="hour"></div>
+          <div id="hand-min" class="hand min" data-type="min"></div>
+          <div class="center-nut"></div>
+        </div>
+        <div class="time-display">Heure : <span id="time-val">00:00</span></div>
+      </div>
+
+      <div class="calendar-row">
+        <div class="tear-off-box" id="cal-day">
+          <div class="label">JOUR</div>
+          <div class="paper-stack"></div>
+        </div>
+        <div class="tear-off-box" id="cal-month">
+          <div class="label">MOIS</div>
+          <div class="paper-stack"></div>
+        </div>
+        <div class="tear-off-box" id="cal-year">
+          <div class="label">ANNÉE</div>
+          <div class="paper-stack"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
