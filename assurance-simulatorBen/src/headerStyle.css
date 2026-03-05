@@ -1,0 +1,58 @@
+.headerTop {
+    padding: 0px 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background: linear-gradient(90deg, rgba(246, 248, 249, 0.00) 0%, #F7FCFF 28.85%, #F7FCFF 68.75%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+}
+
+
+.logoSection img {
+    margin-right: 64px;
+}
+
+.logoSection nav {
+    display: flex;
+    gap: 20px;
+}
+
+.optionsSection {
+    display: flex;
+}
+
+.rechercheContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-right: 32px;
+}
+
+.loupe {
+    width: 16px;
+    height: 16px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.headerBottom {
+    height: 120px;
+    width: 70%;
+    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.11);
+    padding: 12px 32px;
+
+    border-radius: 10px;
+}
