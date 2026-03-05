@@ -337,6 +337,12 @@
     <div class="dropdown reason-selection">
       <div class="dropdown-title">
         <h1><span>3.</span>Incident description</h1>
+
+        <div class="dropdown-content">
+          <div class="container">
+
+          </div>
+        </div>
       </div>
 
 
@@ -346,88 +352,90 @@
         </div>
 
         <div class="form-container dropdown-content">
-          <form>
+          <div class="container">
+            <form>
 
-            <div>
-              <label for="fname">Prénom</label> <br>
-              <input id="fname" type="text" placeholder="Nom">
-            </div>
-
-            <div>
-              <label for="lname">Nom</label> <br>
-              <input id="lname" type="text" value="Prénom">
-            </div>
-
-            <div>
-              <label for="address">Adresse</label> <br>
-              <input id="address" type="text" value="Rue">
-            </div>
-
-            <div>
-              <label for="number">Numéro de téléphone</label> <br>
-              <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly>
-
-              <div class="keypad">
-                <button type="button" value="1" class="key">1</button>
-                <button type="button" value="2" class="key">2</button>
-                <button type="button" value="3" class="key">3</button>
-                <button type="button" value="4" class="key">4</button>
-                <button type="button" value="5" class="key">5</button>
-                <button type="button" value="6" class="key">6</button>
-                <button type="button" value="7" class="key">7</button>
-                <button type="button" value="8" class="key">8</button>
-                <button type="button" value="9" class="key">9</button>
-                <button type="button" value="0" class="key">0</button>
+              <div>
+                <label for="fname">Prénom</label> <br>
+                <input id="fname" type="text" placeholder="Nom">
               </div>
-            </div> <br>
 
-            <div>
-              <label for="commune-select">Ville</label> <br>
-              <select id="commune-select">
-                <option value="">-- Sélectionnez une option --</option>
-              </select> <br> <br>
-            </div>
+              <div>
+                <label for="lname">Nom</label> <br>
+                <input id="lname" type="text" value="Prénom">
+              </div>
 
-            <!-- <div>
+              <div>
+                <label for="address">Adresse</label> <br>
+                <input id="address" type="text" value="Rue">
+              </div>
+
+              <div>
+                <label for="number">Numéro de téléphone</label> <br>
+                <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly>
+
+                <div class="keypad">
+                  <button type="button" value="1" class="key">1</button>
+                  <button type="button" value="2" class="key">2</button>
+                  <button type="button" value="3" class="key">3</button>
+                  <button type="button" value="4" class="key">4</button>
+                  <button type="button" value="5" class="key">5</button>
+                  <button type="button" value="6" class="key">6</button>
+                  <button type="button" value="7" class="key">7</button>
+                  <button type="button" value="8" class="key">8</button>
+                  <button type="button" value="9" class="key">9</button>
+                  <button type="button" value="0" class="key">0</button>
+                </div>
+              </div> <br>
+
+              <div>
+                <label for="commune-select">Ville</label> <br>
+                <select id="commune-select">
+                  <option value="">-- Sélectionnez une option --</option>
+                </select> <br> <br>
+              </div>
+
+              <!-- <div>
             <label for="license-plate">Plaque d'immatriculation</label>
             <input id="license-plate" type="number">
           </div> -->
 
-            <div class="date-container">
-              <label for="trick-input">Date de naissance</label> <br>
-              <input type="text" id="trick-input" maxlength="7" placeholder="JMA/JMA">
-              <p id=" feedback"></p>
-            </div>
-
-            <div>
-              <label for="email">Email</label><br>
-              <div class="email-container">
-                <input id="email-prefix" type="email">
-                <p>@</p>
-                <input id="email-suffix" type="email">
-                <input id="email-extension" type="text" placeholder=".com" readonly>
-                <button id="random-extension" type="button" placeholder=".ch">random</button>
+              <div class="date-container">
+                <label for="trick-input">Date de naissance</label> <br>
+                <input type="text" id="trick-input" maxlength="7" placeholder="JMA/JMA">
+                <p id=" feedback"></p>
               </div>
-            </div>
 
-            <br>
-
-            <div>
-              <label for="country-code">IBAN</label>
-              <div class="iban-container">
-                <div id="country-code">
-                  <input type="text" maxlength="1" class="letter-input" placeholder="C">
-                  <input type="text" maxlength="1" class="letter-input" placeholder="H">
+              <div>
+                <label for="email">Email</label><br>
+                <div class="email-container">
+                  <input id="email-prefix" type="email">
+                  <p>@</p>
+                  <input id="email-suffix" type="email">
+                  <input id="email-extension" type="text" placeholder=".com" readonly>
+                  <button id="random-extension" type="button" placeholder=".ch">random</button>
                 </div>
-
-                <div id="digits-container" style="display: flex; flex-wrap: wrap; gap: 3px;"></div>
               </div>
-            </div>
 
-          </form>
+              <br>
 
-          <button id="form-next">Next</button>
-          <button id="form-previous">Previous</button>
+              <div>
+                <label for="country-code">IBAN</label>
+                <div class="iban-container">
+                  <div id="country-code">
+                    <input type="text" maxlength="1" class="letter-input" placeholder="C">
+                    <input type="text" maxlength="1" class="letter-input" placeholder="H">
+                  </div>
+
+                  <div id="digits-container" style="display: flex; flex-wrap: wrap; gap: 3px;"></div>
+                </div>
+              </div>
+
+            </form>
+
+            <button id="form-next">Next</button>
+            <button id="form-previous">Previous</button>
+          </div>
         </div>
       </div>
 
@@ -438,7 +446,7 @@
         </div>
 
         <div class="conditionContainer dropdown-content">
-          <div class="conditionHeader">
+          <div class="conditionHeader container">
             <p>Conditions d'Utilisation</p>
             <img class="arrow" src="/imgs/fleche.svg" alt="fleche" />
           </div>
@@ -536,13 +544,21 @@
           <h1><span>6.</span>Are you a robot</h1>
 
           <div class="dropdown-content">
+            <div class="container">
 
+            </div>
           </div>
         </div>
 
         <div class="dropdown">
           <div class="dropdown-title">
             <h1><span>7.</span>Electronic Signature</h1>
+
+            <div class="dropdown-content">
+              <div class="container">
+
+              </div>
+            </div>
           </div>
 
           <div class="dropdown reason-selection">
@@ -550,7 +566,9 @@
               <h1><span>8.</span>Send</h1>
 
               <div class="dropdown-content">
+                <div class="container">
 
+                </div>
               </div>
             </div>
   </section>
