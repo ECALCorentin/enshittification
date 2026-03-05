@@ -124,21 +124,21 @@ R.dropdown{
     background-color: #232b62;
 } */
 
-.validateButton{
+/* .validateButton{
     padding: 10px;
     border-bottom: 1px solid #eee;
     font-size: 0.9em;
     white-space: nowrap;
-}
+} */
 
-.validateButtonActive{
+/* .validateButtonActive{
     padding: 10px;
     border-bottom: 1px solid #eee;
     font-size: 0.9em;
     white-space: nowrap;
     background-color: #232b62;
     color:white;
-}
+} */
 
 /* button {
     width: 20%;
@@ -148,7 +148,7 @@ R.dropdown{
     color: rgb(149, 149, 149);
 } */
 
-.nextButton {
+/* .nextButton {
     background-color: rgb(195, 195, 195);
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -158,7 +158,7 @@ R.dropdown{
     background-color: rgb(35, 43, 98);
     color: white;
     cursor: pointer;
-}
+} */
 
 
 /*=============================================================================*/
@@ -200,7 +200,6 @@ h1{
     max-height: 2000px;
     margin: auto;
     background-color: #F9F9F9;
-
 }
 
 .fake-select-trigger{
@@ -225,4 +224,20 @@ h1{
 
 .email-container{
     display: flex;
+}
+
+.checkboxContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container{
+    padding: 20px;
 }
