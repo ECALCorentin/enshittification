@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <script type="module">
+      function validateLevel(id) {
+        // get the next section
+        const nextSection = document.getElementById(id + 1);
+        nextSection.classList.remove("hidden");
+      }
+
+      document.querySelector("#btnTest").addEventListener("click", (el) => {
+        el.target.classList.add("bg-green-500");
+        validateLevel(0);
+      });
+    </script>
+  </head>
+  <body>
+    <main
+      class="bg-red-100 w-full max-w-[700px] mx-auto px-6 pt-[86px] pb-[120px]">
+      <h1 class="text-5xl text-center leading-none pb-[86px] font-bold">
+        Insurance Simulator
+      </h1>
+
+      <!-- SECTION 1 -->
+      <section id="0" class="">
+        <h2>First section</h2>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500" />
+
+        <button id="btnTest" class="duration-300 transition-all">Test</button>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="1" class="hidden">
+        <h2>Second section</h2>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="you@example.com"
+          class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500" />
+      </section>
+    </main>
+  </body>
+</html>
