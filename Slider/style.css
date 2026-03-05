@@ -1,0 +1,61 @@
+body {
+    background: #ffffff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.dark-pattern-container {
+    text-align: center;
+}
+
+.rail {
+    width: 400px;
+    height: 3px;
+    background: #110D5E;
+    border-radius: 5px;
+    position: relative;
+    cursor: grab;
+    touch-action: none;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.rail:active {
+    cursor: grabbing;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.ball {
+    width: 24px;
+    height: 24px;
+    background: #05A3E0;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    /* Position initiale */
+    transform: translateX(-50%);
+}
+
+.center-point {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.courant
+{
+    color: #110D5E;
+}
