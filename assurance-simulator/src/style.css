@@ -5,6 +5,7 @@
 html, body, #app, * {
   font-family: 'Inter', sans-serif !important;
   color: #110D5E;
+  font-size: 16px;
 }
 
 R.dropdown{
@@ -15,7 +16,7 @@ R.dropdown{
 }
 
 .closed{
-  height: 60px;
+  height: 0px;
   overflow: hidden;
 }
 
@@ -41,7 +42,8 @@ R.dropdown{
 
 
 .fake-select-container {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     border: 1px solid #ccc;
     background: #fff;
     position: relative;
@@ -162,12 +164,12 @@ R.dropdown{
 /*=============================================================================*/
 
 .dropdown-sections{
-    height: 100%;
+    height: 5000px;
 }
 
 .dropdown-title{
     background: linear-gradient(90deg, #FFFFFF 0%, #F7FCFF 32.21%, #F7FCFF 67.31%, #FFFFFF 100%);
-    width: 600px;
+    width: 800px;
     margin: auto;
     height: 50px;
     color: #110D5E;
@@ -176,7 +178,7 @@ R.dropdown{
 }
 
 .dropdown{
-    width: 600px;
+    width: 800px;
     margin: auto;
 }
 
@@ -193,18 +195,34 @@ h1{
     padding-right: 12px;
 }
 
-.ageConfirmationContainer, .dropDownSectionContainer{
-    width: 600px;
-    max-height: 600px;
+.dropdown-content{
+    width: 800px;
+    max-height: 2000px;
     margin: auto;
     background-color: #F9F9F9;
 
 }
 
+.fake-select-trigger{
+    padding-left: 10px;
+}
 
 .dropDownSectionContainer{
     width: inherit;
     background-color: #F9F9F9;
     flex: auto;
     flex-direction: column;
+}
+
+.dropDownSectionContainer p{
+    text-align: center;
+}
+
+.form input{
+    height: 35px;
+    width: 325px;
+}
+
+.email-container{
+    display: flex;
 }
