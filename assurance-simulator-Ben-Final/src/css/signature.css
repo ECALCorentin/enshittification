@@ -1,0 +1,17 @@
+canvas {
+    border-radius: 5px;
+        background: #F5F5F5;
+        border: #92A7CA 1px solid;
+}
+
+.signature-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    width: fit-content;
+}
+
+.adress-warp{
+    display: flex;
+}
