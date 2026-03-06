@@ -22,6 +22,7 @@ R.dropdown{
 
 h1,h2,h3,h4,h5,a,p,button{
     color: #110D5E;
+    line-height: normal;
 }
 
 
@@ -38,6 +39,10 @@ h1,h2,h3,h4,h5,a,p,button{
     background-color: white;
     cursor: pointer;
     position:relative;
+}
+
+.selectedc .checkbox{
+    background-color: #232b62;
 }
 
 /*DROPDOWN*/
@@ -298,4 +303,100 @@ h1{
     border: 1px solid #05A3E0;
     border-radius: 5px;
     margin-bottom: 16px;
+}
+
+
+.intro{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.introContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 64px;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+}
+
+.bigText{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.halfWidth{
+    width: 50%;
+    line-height: normal;
+}
+
+
+.popUpContainer{
+    margin-bottom: 32px;
+    border-radius: 10px;
+}
+
+.popUp{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+
+.offre{
+    background-color: white;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 10px;
+}
+
+.offreText{
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 600;
+}
+.offre-title{
+    margin-bottom: 10px;
+}
+
+.offreText p{
+    color: #B9B9B9;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.closeCross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.disabled{
+    background-color: #FAFAFA;
+    color: #B7B7B7;
+    cursor: default;
+    box-shadow: none;
+}
+
+.disabled:hover {
+    background-color: #FAFAFA;
+    color: #B7B7B7;
 }
