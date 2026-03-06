@@ -8,12 +8,10 @@ const arrow = document.querySelector(".arrow");
 const validateButton = document.querySelector(".validateButton");
 
 const reasonNextButton = document.querySelector(".reasonNextButton");
-const reasonCurrentSection = document.querySelector(".container-reason")
-const reasonNextSection = document.querySelector(".container-form")
+const reasonCurrentSection = document.querySelector(".container-reason");
+const reasonNextSection = document.querySelector(".container-form");
 
-const popUpChiante = document.querySelector(".firtAd")
-
-
+const popUpChiante = document.querySelector(".firtAd");
 
 // scrollList.addEventListener(
 //     "wheel",
@@ -64,9 +62,8 @@ function validation(choix) {
 }
 
 reasonNextButton.addEventListener("click", () => {
-
   reasonNextSection.classList.remove("closed");
   reasonCurrentSection.classList.add("closed");
-  popUpChiante.style.display = "block"
-})
 
+  openPopUp(0);
+});
