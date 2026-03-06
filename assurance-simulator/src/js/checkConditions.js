@@ -1,33 +1,19 @@
-const conditionHeader = document.querySelector(".conditionHeader");
-const conditionContent = document.querySelector(".conditionContent");
-const arrow = document.querySelector(".arrow");
-const checkbox = document.querySelector(".checkbox");
-// const nextButton = document.querySelector(".nextButton");
+const checkbox = document.querySelector(".checkBoxInput");
+const conditionNextButton = document.querySelector(".ConditionsNextButton");
 
-let hasAccepted = false;
+const conditionCurrentSection = document.querySelector(".condition-container")
+const conditionNextSection = document.querySelector(".robot-container")
 
-conditionHeader.addEventListener("click", toggleContent);
+// 1. Il faut ABSOLUMENT ajouter l'écouteur d'événement ici
+checkbox.addEventListener("click", () => {
+    console.log("CLICK");
+    conditionNextButton.classList.toggle("inactive");
+});
 
-function toggleContent() {
-    conditionContent.classList.toggle("conditionContentOpen");
-    arrow.classList.toggle("arrowUp");
 
-    if (conditionContent.classList.contains("conditionContentOpen")) {
-        // On donne la hauteur exacte du texte en pixels
-        conditionContent.style.maxHeight = conditionContent.scrollHeight + "px";
-    } else {
-        // On retire la limite pour fermer
-        conditionContent.style.maxHeight = "0";
-    }
-}
-
-checkbox.addEventListener("click", toggleCheckbox);
-
-function toggleCheckbox() {
-    updateButtonState();
-    hasAccepted = !hasAccepted;
-}
-
-function updateButtonState() {
-    nextButton.classList.toggle("buttonActive");
-}
+// 3. Votre gestionnaire de clic existant
+conditionNextButton.addEventListener("click", (e) => {
+    console.log("Passage à la section suivante...");
+    conditionCurrentSection.classList.add("closed");
+    conditionNextSection.classList.remove("closed")
+});

@@ -201,20 +201,12 @@ document.addEventListener('DOMContentLoaded', chargerCommunes);
 
 /*======================================*/
 
-const formNextButton = document.querySelector("#form-next")
-const formPrevButton = document.querySelector("#form-previous")
+const formCurrentSection = document.querySelector(".container-form")
+const formNextSection = document.querySelector(".condition-container")
 
-const formNextSection = document.querySelector(".disclaimer")
-const formPrevSection = document.querySelector(".reason-selection")
-const formCurrentSection = document.querySelector(".form")
+const formNextButton = document.querySelector(".formNextButton")
 
 formNextButton.addEventListener("click", () => {
-    formNextSection.classList.remove("closed")
-    formCurrentSection.classList.add("closed")
-})
-
-formPrevButton.addEventListener("click", () => {
-    formPrevSection.classList.remove("closed")
-    formCurrentSection.classList.add("closed")
-})
-
+    formCurrentSection.classList.add("closed");
+    formNextSection.classList.remove("closed");
+});

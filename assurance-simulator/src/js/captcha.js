@@ -1,9 +1,12 @@
 const grid = document.getElementById("puzzle-grid");
 const verifyBtn = document.getElementById("verify-btn");
 
-// L'ordre correct (correspond aux noms de vos fichiers 0.jpg à 8.jpg)
+const capNextButton = document.querySelector(".capNextButton")
+const capCurrentSection = document.querySelector(".robot-container")
+const capNextSection = document.querySelector(".signature-container")
+
+
 const correctOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-// Mélange initial
 let currentOrder = [...correctOrder].sort(() => Math.random() - 0.5);
 
 let draggedIdx = null;
@@ -21,6 +24,7 @@ function initPuzzle() {
     tile.style.backgroundImage = `url('/captcha/img_${imgIndex + 1}.png')`;
     tile.style.backgroundSize = "cover";
     tile.style.backgroundPosition = "center";
+
 
     tile.addEventListener("dragstart", function () {
       draggedIdx = i;
@@ -72,14 +76,17 @@ function checkResult() {
   const isCorrect = currentOrder.every((val, i) => val === correctOrder[i]);
 
   if (isCorrect) {
-    verifyBtn.disabled = false;
-    verifyBtn.classList.add("ready");
-    verifyBtn.innerText = "Vérification réussie !";
+    capNextButton.classList.remove("inactive")
   } else {
     verifyBtn.disabled = true;
     verifyBtn.classList.remove("ready");
     verifyBtn.innerText = "Vérifier";
   }
 }
+
+capNextButton.addEventListener("click", () => {
+  capCurrentSection.classList.add("closed");
+  capNextSection.classList.remove("closed");
+})
 
 initPuzzle();
