@@ -66,12 +66,12 @@
 
   <section class="dropdown-sections">
 
-    <div class="dropdown age-confirmation">
+    <div class="dropdown client-confirmation">
       <div class="dropdown-title">
         <h1><span>1.</span>Are you client ?</h1>
       </div>
       <div class="dropdown-content">
-        <div class="container ageConfirmationContainer">
+        <div class="container ageConfirmationContainer clientCheck">
           <div class="conditionFooter">
             <p>Êtes-vous client de notre assurance ?</p>
           </div>
@@ -90,7 +90,7 @@
             </div>
           </div>
           <div class="nextButtonContainer">
-            <button class="nextButton ageNextButton inactive">Suite</button>
+            <button class="nextButton clientNextButton inactive">Suite</button>
           </div>
         </div>
 
@@ -427,24 +427,6 @@
             </div>
 
             <div class="question">
-              <label for="number">Numéro de téléphone</label> <br>
-              <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly required>
-
-              <div class="keypad">
-                <button type="button" value="1" class="key">1</button>
-                <button type="button" value="2" class="key">2</button>
-                <button type="button" value="3" class="key">3</button>
-                <button type="button" value="4" class="key">4</button>
-                <button type="button" value="5" class="key">5</button>
-                <button type="button" value="6" class="key">6</button>
-                <button type="button" value="7" class="key">7</button>
-                <button type="button" value="8" class="key">8</button>
-                <button type="button" value="9" class="key">9</button>
-                <button type="button" value="0" class="key">0</button>
-              </div>
-            </div>
-
-            <div class="question">
               <label for="commune-select">Ville</label> <br>
               <select id="commune-select" required>
                 <option value="">-- Sélectionnez une option --</option>
@@ -482,6 +464,24 @@
                 </div>
 
                 <div id="digits-container"></div>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="number">Numéro de téléphone</label> <br>
+              <input type="text" id="phone-display" placeholder="(+XX)XX XXX XX XX" readonly required>
+
+              <div class="keypad">
+                <button type="button" value="1" class="key">1</button>
+                <button type="button" value="2" class="key">2</button>
+                <button type="button" value="3" class="key">3</button>
+                <button type="button" value="4" class="key">4</button>
+                <button type="button" value="5" class="key">5</button>
+                <button type="button" value="6" class="key">6</button>
+                <button type="button" value="7" class="key">7</button>
+                <button type="button" value="8" class="key">8</button>
+                <button type="button" value="9" class="key">9</button>
+                <button type="button" value="0" class="key">0</button>
               </div>
             </div>
 

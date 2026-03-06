@@ -14,58 +14,59 @@
 </head>
 
 <body>
-   <header>
-      <div class="headerTop">
-        <div class="logoSection">
-          <img src="/imgs/Logo.png" alt="" />
-          <nav>
-            <a href="">My Account</a>
-            <a href="">About Us</a>
-            <a href="">Support</a>
-          </nav>
+  <header>
+    <div class="headerTop">
+      <div class="logoSection">
+        <img src="/imgs/Logo.png" alt="" />
+        <nav>
+          <a href="">My Account</a>
+          <a href="">About Us</a>
+          <a href="">Support</a>
+        </nav>
+      </div>
+      <div class="optionsSection">
+        <div class="rechercheContainer">
+          <p>Rechercher</p>
+          <img class="loupe" src="/imgs/loupe.svg" alt="" />
         </div>
-        <div class="optionsSection">
-          <div class="rechercheContainer">
-            <p>Rechercher</p>
-            <img class="loupe" src="/imgs/loupe.svg" alt="" />
-          </div>
 
-          <p><b>FR</b> | EN</p>
+        <p><b>FR</b> | EN</p>
+      </div>
+    </div>
+    <div class="centered">
+      <div class="headerBottom">
+        <div class="title">
+          <h1>We Want Your Good.</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="headerNav">
+          <a href="">Services</a>
+          <a href="">My profile</a>
         </div>
       </div>
-      <div class="centered">
-        <div class="headerBottom">
-          <div class="title">
-            <h1>We Want Your Good.</h1>
-            <div class="underline"></div>
-          </div>
-          <div class="headerNav">
-            <a href="">Services</a>
-            <a href="">My profile</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="v-spacing"></div>
+    </div>
+  </header>
+  <div class="v-spacing"></div>
 
-    <section class="image centered v-spacing">
-      <img src="business1.png" alt="">
-    </section>
+  <section class="image centered v-spacing">
+    <img src="business1.png" alt="">
+  </section>
 
-    <section class="intro centered">
-      <div class="introContent halfWidth">
-        <h2 class="subtitle bigText halfWidth">Do you want to activate your insurance? It’s easy !</h2>
-        <p class="halfWidth">
-          We are delighted to offer you our services, to which we are deeply committed and passionate. Before contacting us and activating your insurance, please ensure you complete the simple form below.
-        </p>
-      </div>
-     
-    </section>
+  <section class="intro centered">
+    <div class="introContent halfWidth">
+      <h2 class="subtitle bigText halfWidth">Do you want to activate your insurance? It’s easy !</h2>
+      <p class="halfWidth">
+        We are delighted to offer you our services, to which we are deeply committed and passionate. Before contacting
+        us and activating your insurance, please ensure you complete the simple form below.
+      </p>
+    </div>
+
+  </section>
 
   <section class="dropdown-sections">
 
-    <div class="dropdown age-confirmation">
-      <div class="dropdown-title">
+    <div class="dropdown client-confirmation">
+      <div class="dropdown-title not-active">
         <h1><span>1.</span>Are you already client ?</h1>
       </div>
       <div class="dropdown-content">
@@ -85,7 +86,7 @@
             </div>
           </div>
           <div class="nextButtonContainer">
-                <button class="nextButton">Suite</button>
+            <button class="nextButton">Suite</button>
           </div>
         </div>
 
@@ -102,8 +103,10 @@
 
         <div class="offre">
           <div class="offreText">
-            <h2 class="offre-title offreText">Save 20% on your future insurance modules <span class="bold">- happiest life</span></h2>
-            <p>Offer valid only on the purchase of new modules for your health insurance <br>from March 12th to March 24th</p>
+            <h2 class="offre-title offreText">Save 20% on your future insurance modules <span class="bold">- happiest
+                life</span></h2>
+            <p>Offer valid only on the purchase of new modules for your health insurance <br>from March 12th to March
+              24th</p>
           </div>
           <div class="nextButtonContainer">
             <button class="nextButton">Suite</button>
@@ -130,7 +133,7 @@
             </div>
 
             <div class="fake-options-list">
-             <div class="option-item">Mise à jour de mon RIB pour les prélèvements</div>
+              <div class="option-item">Mise à jour de mon RIB pour les prélèvements</div>
               <div class="option-item">Demande de duplicata d'attestation de droits</div>
               <div class="option-item">Changement d'adresse suite à un déménagement</div>
               <div class="option-item">Déclaration de perte de ma carte vitale</div>
@@ -318,42 +321,24 @@
             <form>
 
               <div>
-                <label for="fname">Prénom</label> <br>
-                <input id="fname" type="text" placeholder="Nom">
+                <label for="fname">First Name</label> <br>
+                <input id="fname" type="text" placeholder="Last Name">
               </div>
 
               <div>
-                <label for="lname">Nom</label> <br>
-                <input id="lname" type="text" value="Prénom">
+                <label for="lname">Last Name</label> <br>
+                <input id="lname" type="text" value="First Name">
               </div>
 
               <div>
-                <label for="address">Adresse</label> <br>
-                <input id="address" type="text" value="Rue">
+                <label for="address">Address</label> <br>
+                <input id="address" type="text" value="Street">
               </div>
 
               <div>
-                <label for="number">Numéro de téléphone</label> <br>
-                <input type="text" id="phone-display" value="(+XX)XX XXX XX XX" readonly>
-
-                <div class="keypad">
-                  <button type="button" value="1" class="key">1</button>
-                  <button type="button" value="2" class="key">2</button>
-                  <button type="button" value="3" class="key">3</button>
-                  <button type="button" value="4" class="key">4</button>
-                  <button type="button" value="5" class="key">5</button>
-                  <button type="button" value="6" class="key">6</button>
-                  <button type="button" value="7" class="key">7</button>
-                  <button type="button" value="8" class="key">8</button>
-                  <button type="button" value="9" class="key">9</button>
-                  <button type="button" value="0" class="key">0</button>
-                </div>
-              </div> <br>
-
-              <div>
-                <label for="commune-select">Ville</label> <br>
+                <label for="commune-select">City</label> <br>
                 <select id="commune-select">
-                  <option value="">-- Sélectionnez une option --</option>
+                  <option value="">-- Select an option --</option>
                 </select> <br> <br>
               </div>
 
@@ -363,7 +348,7 @@
           </div> -->
 
               <div class="date-container">
-                <label for="trick-input">Date de naissance</label> <br>
+                <label for="trick-input">Date of birth</label> <br>
                 <input type="text" id="trick-input" maxlength="7" placeholder="JMA/JMA">
                 <p id=" feedback"></p>
               </div>
@@ -401,24 +386,26 @@
         </div>
       </div>
 
-       <section class="popUpContainer centered">
-      <div class="popUp">
-        <div class="imgContainer">
-          <img class="closeCross" src="croix.png" alt="">
-          <img src="business2.png" alt="">
-        </div>
+      <section class="popUpContainer centered">
+        <div class="popUp">
+          <div class="imgContainer">
+            <img class="closeCross" src="croix.png" alt="">
+            <img src="business2.png" alt="">
+          </div>
 
-        <div class="offre">
-          <div class="offreText">
-            <h2 class="offre-title offreText">Save 20% on your future insurance modules <span class="bold">- happiest life</span></h2>
-            <p>Offer valid only on the purchase of new modules for your health insurance <br>from March 12th to March 24th</p>
-          </div>
-          <div class="nextButtonContainer">
-            <button class="nextButton">Suite</button>
+          <div class="offre">
+            <div class="offreText">
+              <h2 class="offre-title offreText">Save 20% on your future insurance modules <span class="bold">- happiest
+                  life</span></h2>
+              <p>Offer valid only on the purchase of new modules for your health insurance <br>from March 12th to March
+                24th</p>
+            </div>
+            <div class="nextButtonContainer">
+              <button class="nextButton">Suite</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
 
       <div class="dropdown disclaimer">
@@ -526,7 +513,7 @@
 
           <div class="dropdown-content">
             <div class="container centered">
-               <div class="captcha-container">
+              <div class="captcha-container">
                 <div class="captcha-header">
                   <span class="shield-icon">🛡️</span>
                   <div class="text">
@@ -535,41 +522,41 @@
                   </div>
                 </div>
 
-              <div id="puzzle-grid" class="grid"></div>
+                <div id="puzzle-grid" class="grid"></div>
 
-              
 
-              <button id="verify-btn" class="captcha-btn" disabled></button>
-            </div>
-            <div class="nextButtonContainer">
-                <button class="nextButton">Suite</button>
-              </div>
-          </div>
-        </div>
 
-        <div class="dropdown">
-          <div class="dropdown-title">
-            <h1><span>7.</span>Electronic Signature</h1>
-          </div>
-
-          <div class="dropdown-content">
-            <div class="container centered">
-              <div class="signature-wrapper">
-                <label>Signez ici</label>
-                <canvas id="sig-canvas" width="500" height="200"></canvas>
+                <button id="verify-btn" class="captcha-btn" disabled></button>
               </div>
               <div class="nextButtonContainer">
                 <button class="nextButton">Suite</button>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="centered">
+          <div class="dropdown">
+            <div class="dropdown-title">
+              <h1><span>7.</span>Electronic Signature</h1>
+            </div>
+
+            <div class="dropdown-content">
+              <div class="container centered">
+                <div class="signature-wrapper">
+                  <label>Signez ici</label>
+                  <canvas id="sig-canvas" width="500" height="200"></canvas>
+                </div>
+                <div class="nextButtonContainer">
+                  <button class="nextButton">Suite</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="centered">
             <a href="GetInTouch.zip" download="GetInTouch.zip" class="nextButton download-btn disabled">
               Get in Touch
             </a>
-        </div>
+          </div>
   </section>
 
   <script type="module" src="src/js/main.js"></script>

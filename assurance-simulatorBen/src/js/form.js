@@ -127,7 +127,7 @@ function updateDisplay() {
 
 
         let displayArray = currentMask.split('');
-        displayArray[nextTargetIndex] = "[?]";
+        displayArray[nextTargetIndex] = "?";
         phoneInput.value = displayArray.join('');
     } else {
         phoneInput.value = currentMask;

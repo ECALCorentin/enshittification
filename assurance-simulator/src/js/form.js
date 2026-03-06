@@ -127,7 +127,7 @@ function updateDisplay() {
 
 
         let displayArray = currentMask.split('');
-        displayArray[nextTargetIndex] = "[?]";
+        displayArray[nextTargetIndex] = "?";
         phoneInput.value = displayArray.join('');
     } else {
         phoneInput.value = currentMask;
@@ -177,14 +177,12 @@ async function chargerCommunes() {
 
         const select = document.querySelector('#commune-select');
 
-        // On vide et on prépare le sélecteur
         select.innerHTML = '<option value="" disabled selected>Choisissez une option</option>';
 
         data.forEach(commune => {
             const [nom, population] = commune;
             const option = document.createElement('option');
             option.value = nom;
-            // On affiche le nom (trié par population, pour rester dans le "trick")
             option.textContent = nom;
             select.appendChild(option);
         });
@@ -209,4 +207,72 @@ const formNextButton = document.querySelector(".formNextButton")
 formNextButton.addEventListener("click", () => {
     formCurrentSection.classList.add("closed");
     formNextSection.classList.remove("closed");
+});
+
+const inputNumber = document.querySelector('#address-number');
+
+let intervalId = null;
+
+// --- LOGIQUE DU COMPTEUR ---
+
+function startIncreasing() {
+    if (isNaN(parseInt(inputNumber.value))) {
+        inputNumber.value = 0;
+    }
+
+    intervalId = setInterval(() => {
+        let currentValue = parseInt(inputNumber.value);
+        inputNumber.value = currentValue + 1;
+
+        // On active le bouton dès qu'une valeur est présente
+        if (formNextButton) {
+            formNextButton.classList.remove("inactive");
+            formNextButton.classList.add("formNextButtonActive");
+        }
+
+        inputNumber.dispatchEvent(new Event('input'));
+    }, 100);
+}
+
+function stopIncreasing() {
+    if (intervalId) {
+        clearInterval(intervalId);
+        intervalId = null;
+    }
+}
+
+// --- ÉCOUTEURS POUR LE COMPTEUR ---
+
+inputNumber.addEventListener('mousedown', startIncreasing);
+inputNumber.addEventListener('mouseup', stopIncreasing);
+inputNumber.addEventListener('mouseleave', stopIncreasing);
+
+inputNumber.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    startIncreasing();
+});
+inputNumber.addEventListener('touchend', stopIncreasing);
+
+inputNumber.addEventListener('keydown', (e) => {
+    if (e.key !== "Tab") e.preventDefault();
+});
+
+// --- LOGIQUE DE NAVIGATION (SECTION SUIVANTE) ---
+
+formNextButton.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // On change de section uniquement si le bouton n'est pas inactif
+    if (!formNextButton.classList.contains("inactive")) {
+        if (formCurrentSection) {
+            formCurrentSection.classList.add("closed");
+        }
+
+        if (formNextSection) {
+            formNextSection.classList.remove("closed");
+        }
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        console.log("Numéro d'adresse validé :", inputNumber.value);
+    }
 });

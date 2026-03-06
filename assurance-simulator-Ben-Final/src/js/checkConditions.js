@@ -4,6 +4,8 @@ const conditionNextButton = document.querySelector(".ConditionsNextButton");
 const conditionCurrentSection = document.querySelector(".condition-container");
 const conditionNextSection = document.querySelector(".robot-container");
 
+popUpChianteDeux = document.querySelector(".ConditionsNextButton")
+
 // 1. Il faut ABSOLUMENT ajouter l'écouteur d'événement ici
 checkbox.addEventListener("click", () => {
   console.log("CLICK");
@@ -16,5 +18,5 @@ conditionNextButton.addEventListener("click", (e) => {
   conditionCurrentSection.classList.add("closed");
   conditionNextSection.classList.remove("closed");
 
-  openPopUp(1);
+  popUpChianteDeux.computedStyleMap.display = "none"
 });

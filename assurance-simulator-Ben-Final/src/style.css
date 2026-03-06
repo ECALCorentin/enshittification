@@ -207,8 +207,6 @@ button {
 }
 /*=============================================================================*/
 
-.dropdown-sections{
-}
 
 .dropdown-title{
     background: linear-gradient(90deg, #FFFFFF 0%, #F7FCFF 32.21%, #F7FCFF 67.31%, #FFFFFF 100%);
@@ -565,4 +563,12 @@ h1{
 
 .lastSection{
     margin-bottom: 120px;
+}
+
+#address-number:hover{
+    cursor: pointer;
+}
+
+.pl{
+    padding-left: 5px !important;
 }

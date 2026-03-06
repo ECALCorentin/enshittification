@@ -522,3 +522,15 @@ label{
     background-color: #FAFAFA;
     color: #B7B7B7;
 }
+
+/*===============================*/
+
+.not-active{
+    filter: saturate(.25) !important;
+    opacity: .5 !important;
+    box-shadow: none;
+}
+
+#address-number:hover{
+    cursor: pointer;
+}

@@ -1,932 +1,477 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>assurance-simulator</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/css/headerStyle.css" />
-    <link rel="stylesheet" href="src/css/captcha.css" />
-    <link rel="stylesheet" href="src/css/signature.css" />
-  </head>
 
-  <body>
-    <header>
-      <div class="headerTop">
-        <div class="logoSection">
-          <img src="Logo.png" alt="" />
-          <nav>
-            <a href="">My Account</a>
-            <a href="">About Us</a>
-            <a href="">Support</a>
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>assurance-simulator</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="src/css/headerStyle.css" />
+  <link rel="stylesheet" href="src/css/captcha.css" />
+  <link rel="stylesheet" href="src/css/signature.css" />
+</head>
+
+<body>
+  <header>
+    <div class="headerTop">
+      <div class="logoSection">
+        <img src="Logo.png" alt="" />
+        <nav>
+          <a href="">My Account</a>
+          <a href="">About Us</a>
+          <a href="">Support</a>
+        </nav>
+      </div>
+      <div class="optionsSection">
+        <div class="rechercheContainer">
+          <p>Search</p>
+          <img class="loupe" src="loupe.svg" alt="" />
         </div>
-        <div class="optionsSection">
-          <div class="rechercheContainer">
-            <p>Rechercher</p>
-            <img class="loupe" src="loupe.svg" alt="" />
-          </div>
 
-          <p><b>FR</b> | EN</p>
+        <p><b>EN</b> | FR</p>
+      </div>
+    </div>
+    <div class="centered">
+      <div class="headerBottom">
+        <div class="title">
+          <h1>We Want Your Good.</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="headerNav">
+          <a href="">Services</a>
+          <a href="">My profile</a>
         </div>
       </div>
-      <div class="centered">
-        <div class="headerBottom">
-          <div class="title">
-            <h1>We Want Your Good.</h1>
-            <div class="underline"></div>
-          </div>
-          <div class="headerNav">
-            <a href="">Services</a>
-            <a href="">My profile</a>
-          </div>
-        </div>
+    </div>
+  </header>
+  <div class="v-spacing"></div>
+
+  <section class="spacingV image centered v-spacing">
+    <img src="business1.png" alt="" />
+  </section>
+
+  <section class="intro centered">
+    <div class="introContent halfWidth">
+      <h2 class="subtitle bigText halfWidth">
+        Do you want to activate your insurance? It’s easy !
+      </h2>
+      <p class="halfWidth">
+        We are delighted to offer you our services, to which we are deeply
+        committed and passionate. Before contacting us and activating your
+        insurance, please ensure you complete the simple form below.
+      </p>
+    </div>
+  </section>
+
+  <section class="dropdown-sections">
+    <div class="dropdown age-confirmation">
+      <div class="dropdown-title">
+        <h1><span>1.</span>Are you client ?</h1>
       </div>
-    </header>
-    <div class="v-spacing"></div>
-
-    <section class="spacingV image centered v-spacing">
-      <img src="business1.png" alt="" />
-    </section>
-
-    <section class="intro centered">
-      <div class="introContent halfWidth">
-        <h2 class="subtitle bigText halfWidth">
-          Do you want to activate your insurance? It’s easy !
-        </h2>
-        <p class="halfWidth">
-          We are delighted to offer you our services, to which we are deeply
-          committed and passionate. Before contacting us and activating your
-          insurance, please ensure you complete the simple form below.
-        </p>
-      </div>
-    </section>
-
-    <section class="dropdown-sections">
-      <div class="dropdown age-confirmation">
-        <div class="dropdown-title">
-          <h1><span>1.</span>Are you client ?</h1>
-        </div>
-        <div class="dropdown-content">
-          <div class="container ageConfirmationContainer">
-            <!-- <div class="conditionFooter">
+      <div class="dropdown-content">
+        <div class="container ageConfirmationContainer">
+          <!-- <div class="conditionFooter">
               <p>Êtes-vous client de notre assurance ?</p>
             </div> -->
-            <div class="content">
-              <div class="checkboxContainer">
-                <div class="checkbox">
-                  <img class="croix" src="cross.svg" alt="" />
-                </div>
-                <p>Yes, I am</p>
+          <div class="content">
+            <div class="checkboxContainer">
+              <div class="checkbox">
+                <img class="croix" src="cross.svg" alt="" />
               </div>
-              <div class="checkboxContainer">
-                <div class="checkbox">
-                  <img class="croix" src="cross.svg" alt="" />
-                </div>
-                <p>No, I am not</p>
+              <p>Yes, I am</p>
+            </div>
+            <div class="checkboxContainer">
+              <div class="checkbox">
+                <img class="croix" src="cross.svg" alt="" />
               </div>
+              <p>No, I am not</p>
             </div>
-            <div class="nextButtonContainer">
-              <button class="nextButton ageNextButton inactive">Suite</button>
-            </div>
+          </div>
+          <div class="nextButtonContainer">
+            <button class="nextButton ageNextButton inactive">Next</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="dropdown reason-selection">
-        <div class="dropdown-title">
-          <h1><span>2.</span>Motif</h1>
-        </div>
+    <div class="dropdown reason-selection">
+      <div class="dropdown-title">
+        <h1><span>2.</span>Reason</h1>
+      </div>
 
-        <div class="dropDownSectionContainer dropdown-content">
-          <div class="container container-reason closed">
-            <p>Séléctionnez un motif (soyez précis)</p>
-            <div class="fake-select-container">
-              <div class="fake-select-trigger">
-                <div style="display: flex">
-                  <div class="buttonInnerRect"></div>
-                  <p class="choice">Motif de la demande</p>
-                </div>
-                <img class="arrow" src="fleche.svg" alt="" />
+      <div class="dropDownSectionContainer dropdown-content">
+        <div class="container container-reason closed">
+          <p>Select a valid reason (be precise)</p>
+          <div class="fake-select-container">
+            <div class="fake-select-trigger">
+              <div style="display: flex">
+                <div class="buttonInnerRect"></div>
+                <p class="choice">Choose a reason</p>
               </div>
-
-              <div class="fake-options-list">
-                <div class="option-item">
-                  Mise à jour de mon RIB pour les prélèvements
-                </div>
-                <div class="option-item">
-                  Demande de duplicata d'attestation de droits
-                </div>
-                <div class="option-item">
-                  Changement d'adresse suite à un déménagement
-                </div>
-                <div class="option-item">
-                  Déclaration de perte de ma carte vitale
-                </div>
-                <div class="option-item">
-                  Dysfonctionnement de la puce de ma carte vitale
-                </div>
-                <div class="option-item">
-                  Erreur sur mon nom de famille ou prénom
-                </div>
-                <div class="option-item">
-                  Ajout d'un ayant-droit (enfant de moins de 16 ans)
-                </div>
-                <div class="option-item">
-                  Retrait d'un ayant-droit du dossier familial
-                </div>
-                <div class="option-item">
-                  Modification de mon statut marital (mariage/divorce)
-                </div>
-                <div class="option-item">
-                  Demande de Carte Européenne d'Assurance Maladie (CEAM)
-                </div>
-                <div class="option-item">
-                  Non-réception de ma CEAM commandée il y a 3 semaines
-                </div>
-                <div class="option-item">
-                  Changement de médecin traitant déclaré
-                </div>
-                <div class="option-item">
-                  Erreur de saisie sur mon numéro de sécurité sociale
-                </div>
-                <div class="option-item">
-                  Justificatif de couverture pour un visa étranger
-                </div>
-                <div class="option-item">
-                  Problème de connexion à mon espace personnel
-                </div>
-                <div class="option-item">
-                  Réinitialisation de mon mot de passe sécurisé
-                </div>
-
-                <div class="option-item">
-                  Absence de remboursement pour une consultation médicale
-                </div>
-                <div class="option-item">
-                  Retard de paiement sur une feuille de soins papier
-                </div>
-                <div class="option-item">
-                  Montant de remboursement inférieur au barème habituel
-                </div>
-                <div class="option-item">
-                  Double prélèvement de la franchise médicale
-                </div>
-                <div class="option-item">
-                  Contestation d'un dépassement d'honoraires non prévenu
-                </div>
-                <div class="option-item">
-                  Explication sur le reste à charge après chirurgie
-                </div>
-                <div class="option-item">
-                  Suivi d'un dossier de soins dentaires complexes
-                </div>
-                <div class="option-item">
-                  Non-transmission automatique par ma pharmacie
-                </div>
-                <div class="option-item">
-                  Remboursement de frais d'optique (lunettes/lentilles)
-                </div>
-                <div class="option-item">
-                  Prise en charge de semelles orthopédiques
-                </div>
-                <div class="option-item">
-                  Questions sur le forfait hospitalier journalier
-                </div>
-                <div class="option-item">
-                  Demande de secours financier exceptionnel
-                </div>
-                <div class="option-item">
-                  Délai de traitement anormalement long pour un dossier
-                </div>
-
-                <div class="option-item">
-                  Déclaration d'un accident causé par un tiers
-                </div>
-                <div class="option-item">
-                  Ouverture d'un dossier d'Affection Longue Durée (ALD)
-                </div>
-                <div class="option-item">
-                  Renouvellement d'une prise en charge à 100% (exonération)
-                </div>
-                <div class="option-item">
-                  Déclaration de grossesse et calendrier de suivi
-                </div>
-                <div class="option-item">
-                  Demande d'accord préalable pour kinésithérapie
-                </div>
-                <div class="option-item">
-                  Interrogation sur le remboursement d'une cure thermale
-                </div>
-                <div class="option-item">
-                  Prise en charge de transport sanitaire (VSL/Ambulance)
-                </div>
-                <div class="option-item">
-                  Accord pour appareillage auditif de classe A
-                </div>
-                <div class="option-item">
-                  Question sur le dépistage organisé du cancer colorectal
-                </div>
-                <div class="option-item">
-                  Accompagnement pour un sevrage tabagique
-                </div>
-                <div class="option-item">
-                  Prise en charge de séances de psychologue (dispositif
-                  spécifique)
-                </div>
-                <div class="option-item">
-                  Demande d'examen de prévention en santé gratuit
-                </div>
-
-                <div class="option-item">
-                  Non-paiement des indemnités journalières (IJ)
-                </div>
-                <div class="option-item">
-                  Calcul erroné du montant de mes indemnités journalières
-                </div>
-                <div class="option-item">
-                  Envoi d'un avis d'arrêt de travail prolongé
-                </div>
-                <div class="option-item">
-                  Reprise de travail en mi-temps thérapeutique
-                </div>
-                <div class="option-item">
-                  Contestation d'une décision du médecin conseil
-                </div>
-                <div class="option-item">
-                  Convocation à un contrôle médical de l'assurance
-                </div>
-                <div class="option-item">
-                  Demande de pension d'invalidité (catégorie 1 ou 2)
-                </div>
-                <div class="option-item">
-                  Déclaration d'un accident du travail ou trajet
-                </div>
-                <div class="option-item">
-                  Déclaration d'une maladie professionnelle
-                </div>
-                <div class="option-item">
-                  Suivi d'un dossier de rente d'incapacité permanente
-                </div>
-
-                <div class="option-item">
-                  Mise à jour du lien Noémie avec ma mutuelle
-                </div>
-                <div class="option-item">
-                  Demande de Complémentaire Santé Solidaire (CSS)
-                </div>
-                <div class="option-item">
-                  Renouvellement annuel de ma demande de CSS
-                </div>
-                <div class="option-item">
-                  Attestation de résiliation de mon contrat précédent
-                </div>
-                <div class="option-item">
-                  Explication sur le tiers-payant intégral
-                </div>
-
-                <div class="option-item">
-                  Soins reçus lors d'un séjour temporaire à l'étranger
-                </div>
-                <div class="option-item">
-                  Rapatriement sanitaire pour raison médicale urgente
-                </div>
-                <div class="option-item">
-                  Changement de situation professionnelle (indépendant vers
-                  salarié)
-                </div>
-                <div class="option-item">
-                  Demande de dossier de Protection Universelle Maladie (PUMA)
-                </div>
-                <div class="option-item">
-                  Recherche d'un centre de santé conventionné secteur 1
-                </div>
-                <div class="option-item">
-                  Informations sur le "100% Santé" (zéro reste à charge)
-                </div>
-                <div class="option-item">
-                  Question sur la facturation de la télémédecine
-                </div>
-                <div class="option-item">
-                  Remboursement d'un vaccin non obligatoire mais prescrit
-                </div>
-                <div class="option-item">
-                  Aide pour remplir le formulaire S1 (travailleur frontalier)
-                </div>
-                <div class="option-item">
-                  Signalement d'une fraude potentielle sur mon compte
-                </div>
-                <div class="option-item">
-                  Interrogation sur le montant de la CSG déduite
-                </div>
-                <div class="option-item">
-                  Remboursement de prestations de soins infirmiers à domicile
-                </div>
-                <div class="option-item">
-                  Suivi de dossier d'orthodontie pour mon adolescent
-                </div>
-                <div class="option-item">
-                  Demande de médiation suite à un litige persistant
-                </div>
-                <div class="option-item">
-                  Informations sur le don d'organes et registre de refus
-                </div>
-                <div class="option-item">
-                  Aide aux aidants : prestations disponibles
-                </div>
-                <div class="option-item">
-                  Accès au Dossier Médical Partagé (DMP)
-                </div>
-                <div class="option-item">
-                  Erreur sur le décompte de mes participations forfaitaires
-                </div>
-                <div class="option-item">
-                  Justificatif pour un organisme de prêt immobilier
-                </div>
-                <div class="option-item">
-                  Remboursement de tests PCR ou antigéniques
-                </div>
-                <div class="option-item">
-                  Suivi de demande d'aide ménagère après hospitalisation
-                </div>
-                <div class="option-item">
-                  Interrogation sur les soins de podologie (diabète)
-                </div>
-                <div class="option-item">
-                  Validation d'un devis pour prothèse de hanche
-                </div>
-                <div class="option-item">
-                  Correction de mes coordonnées téléphoniques
-                </div>
-                <div class="option-item">
-                  Souscription à un service d'alerte SMS de remboursement
-                </div>
-                <div class="option-item">
-                  Information sur la prise en charge de l'orthophonie
-                </div>
-                <div class="option-item">
-                  Demande de bilan bucco-dentaire "M'T Dents"
-                </div>
-                <div class="option-item">
-                  Vérification de mon affiliation au régime général
-                </div>
-                <div class="option-item">
-                  Demande d'attestation de paiement pour les impôts
-                </div>
-                <div class="option-item">
-                  Question sur le cumul emploi-retraite et cotisations
-                </div>
-                <div class="option-item">
-                  Signalement d'un changement de banque (fusion bancaire)
-                </div>
-                <div class="option-item">
-                  Remboursement de pharmacie suite à une ordonnance d'urgence
-                </div>
-                <div class="option-item">
-                  Prise en charge d'un traitement expérimental
-                </div>
-                <div class="option-item">
-                  Aide à la lecture de mon relevé de prestations mensuel
-                </div>
-                <div class="option-item">
-                  Questions sur la participation forfaitaire de 1 euro
-                </div>
-                <div class="option-item">
-                  Demande de relevé de carrière pour la retraite
-                </div>
-                <div class="option-item">
-                  Dossier de soins dentaires suite à un traumatisme facial
-                </div>
-                <div class="option-item">
-                  Justification de ressources pour le maintien des droits
-                </div>
-                <div class="option-item">
-                  Information sur les centres d'examen de santé
-                </div>
-                <div class="option-item">
-                  Notification d'un décès au sein du foyer
-                </div>
-                <div class="option-item">
-                  Demande d'aide financière pour l'achat de matériel médical
-                </div>
-                <div class="option-item">
-                  Suivi de mon dossier de soins à domicile post-opératoires
-                </div>
-                <div class="option-item">
-                  Réclamation concernant l'accueil en agence physique
-                </div>
-                <div class="option-item">
-                  Transfert de dossier entre deux caisses régionales
-                </div>
-                <div class="option-item">
-                  Maintien de droits après une période de chômage
-                </div>
-                <div class="option-item">
-                  Changement de statut : passage d'étudiant à salarié
-                </div>
-                <div class="option-item">
-                  Fin de droits à la Protection Universelle Maladie
-                </div>
-                <div class="option-item">
-                  Radiation par erreur de mon compte assuré
-                </div>
-                <div class="option-item">
-                  Réactivation de compte après une longue période d'inactivité
-                </div>
-                <div class="option-item">
-                  Demande de rattachement après une expatriation
-                </div>
-
-                <div class="option-item">
-                  Demande de prise en charge pour lentilles de contact souples
-                </div>
-                <div class="option-item">
-                  Accord pour le remplacement d'un bridge dentaire
-                </div>
-                <div class="option-item">
-                  Remboursement de monture de lunettes suite à une casse
-                </div>
-                <div class="option-item">
-                  Achat d'un fauteuil roulant manuel : modalités de prise en
-                  charge
-                </div>
-                <div class="option-item">
-                  Question sur le forfait annuel pour les pansements spécifiques
-                </div>
-                <div class="option-item">
-                  Prise en charge d'un neurostimulateur électrique (TENS)
-                </div>
-                <div class="option-item">
-                  Remplacement de piles pour appareil auditif
-                </div>
-
-                <div class="option-item">
-                  Prise en charge de la chambre particulière en hôpital public
-                </div>
-                <div class="option-item">
-                  Demande de prise en charge pour une chirurgie réparatrice
-                </div>
-                <div class="option-item">
-                  Explication sur les frais de télévision et téléphone à
-                  l'hôpital
-                </div>
-                <div class="option-item">
-                  Remboursement des frais de transport pour dialyse
-                </div>
-                <div class="option-item">
-                  Accord préalable pour une hospitalisation à domicile (HAD)
-                </div>
-                <div class="option-item">
-                  Suivi des frais de séjour pour une rééducation fonctionnelle
-                </div>
-                <div class="option-item">
-                  Délai de carence appliqué sur mon dernier arrêt de travail
-                </div>
-                <div class="option-item">
-                  Erreur sur l'attestation de salaire remplie par l'employeur
-                </div>
-                <div class="option-item">
-                  Demande de congé paternité ou d'accueil de l'enfant
-                </div>
-                <div class="option-item">
-                  Prolongation exceptionnelle d'un congé de maternité
-                </div>
-                <div class="option-item">
-                  Indemnisation d'un arrêt de travail à temps partiel
-                </div>
-                <div class="option-item">
-                  Question sur le cumul des indemnités avec une autre activité
-                </div>
-                <div class="option-item">
-                  Visite de reprise après un arrêt de plus de 30 jours
-                </div>
-                <div class="option-item">
-                  Remboursement d'une consultation de nutritionniste
-                </div>
-                <div class="option-item">
-                  Prise en charge des séances d'ergothérapie (cas spécifique)
-                </div>
-                <div class="option-item">
-                  Demande d'entente préalable pour l'orthoptie
-                </div>
-                <div class="option-item">
-                  Prise en charge du transport pour un enfant en CMPP
-                </div>
-                <div class="option-item">
-                  Remboursement d'un traitement d'aide à la fertilité (PMA)
-                </div>
-                <div class="option-item">
-                  Suivi des soins liés à une morsure d'animal sauvage
-                </div>
-                <div class="option-item">
-                  Information sur le remboursement des protections
-                  d'incontinence
-                </div>
-                <div class="option-item">
-                  Impossible de télécharger mon relevé fiscal annuel
-                </div>
-                <div class="option-item">
-                  Erreur 404 lors de la validation d'un formulaire en ligne
-                </div>
-                <div class="option-item">
-                  Problème de lecture de la carte vitale chez le praticien
-                </div>
-                <div class="option-item">
-                  Mise à jour des coordonnées mail sur l'espace sécurisé
-                </div>
-                <div class="option-item">
-                  Dysfonctionnement de l'application mobile sur Android/iOS
-                </div>
-                <div class="option-item">
-                  Demande de suppression définitive de mes données personnelles
-                </div>
-                <div class="option-item">
-                  Récupération de frais engagés pour un tiers en fin de vie
-                </div>
-                <div class="option-item">
-                  Attestation de non-paiement pour un organisme tiers
-                </div>
-                <div class="option-item">
-                  Signalement d'un changement de nom d'usage
-                </div>
-                <div class="option-item">
-                  Remboursement de frais de péage lors d'un transport médical
-                </div>
-                <div class="option-item">
-                  Demande de copie de mon dossier médical complet
-                </div>
-                <div class="option-item">
-                  Interrogation sur la réforme du tiers-payant généralisé
-                </div>
-                <div class="option-item">
-                  Contestation d'une amende pour non-déclaration de changement
-                  de situation
-                </div>
-                <div class="option-item">
-                  Demande d'information sur la fin de vie et les soins
-                  palliatifs
-                </div>
-                <div class="option-item">
-                  Prise en charge de soins d'ostéopathie (si inclus au contrat)
-                </div>
-                <div class="option-item">
-                  Besoin d'un interprète pour un rendez-vous médical conseil
-                </div>
-                <div class="validateButton">→ VALIDER</div>
-              </div>
+              <img class="arrow" src="fleche.svg" alt="" />
             </div>
-            <div class="nextButtonContainer">
-              <button class="nextButton reasonNextButton inactive">
-                Suite
-              </button>
+
+            <div class="fake-options-list">
+              <div class="option-item">Full reimbursement for inpatient cardiovascular surgery</div>
+              <div class="option-item">Claim for private room surcharges during hospitalization</div>
+              <div class="option-item">Refund for post-operative nursing care at home</div>
+              <div class="option-item">Coverage for anesthesia fees in elective procedures</div>
+              <div class="option-item">Reimbursement for robotic-assisted surgical interventions</div>
+              <div class="option-item">Claim for specialized orthopedic hip replacement</div>
+              <div class="option-item">Coverage for bariatric surgery follow-up care</div>
+              <div class="option-item">Refund for outpatient surgery facility fees</div>
+              <div class="option-item">Reimbursement for ligament reconstruction surgery</div>
+
+              <div class="option-item">Claim for high-end ceramic dental crowns</div>
+              <div class="option-item">Refund for emergency root canal therapy</div>
+              <div class="option-item">Full coverage for orthodontic braces for teenagers</div>
+              <div class="option-item">Reimbursement for complex dental bone grafting</div>
+              <div class="option-item">Claim for surgical wisdom tooth extraction</div>
+              <div class="option-item">Coverage for periodontal disease laser treatment</div>
+              <div class="option-item">Refund for dental bridges and partial dentures</div>
+              <div class="option-item">Claim for emergency treatment of a broken jaw</div>
+
+              <div class="option-item">Refund for progressive multifocal lenses</div>
+              <div class="option-item">Claim for premium titanium eyeglass frames</div>
+              <div class="option-item">Full coverage for digital hearing aid devices</div>
+              <div class="option-item">Reimbursement for pediatric vision correction</div>
+              <div class="option-item">Claim for specialized contact lenses for keratoconus</div>
+              <div class="option-item">Refund for hearing aid maintenance and battery costs</div>
+              <div class="option-item">Coverage for laser refractive surgery (myopia)</div>
+
+              <div class="option-item">Activation of 100% coverage for Type 1 Diabetes</div>
+              <div class="option-item">Refund for chemotherapy and radiation therapy sessions</div>
+              <div class="option-item">Claim for dialysis treatment transportation costs</div>
+              <div class="option-item">Coverage for multiple sclerosis (MS) biological drugs</div>
+              <div class="option-item">Reimbursement for specialized home oxygen therapy</div>
+              <div class="option-item">Claim for cystic fibrosis daily physiotherapy</div>
+              <div class="option-item">Refund for autoimmune disease infusion treatments</div>
+
+              <div class="option-item">Full reimbursement for In Vitro Fertilization (IVF) cycles</div>
+              <div class="option-item">Claim for prenatal genetic screening and testing</div>
+              <div class="option-item">Refund for epidural anesthesia during childbirth</div>
+              <div class="option-item">Coverage for postpartum pelvic floor rehabilitation</div>
+              <div class="option-item">Reimbursement for high-risk pregnancy home monitoring</div>
+              <div class="option-item">Claim for neonatal intensive care unit (NICU) stays</div>
+
+              <div class="option-item">Claim for electric wheelchair purchase and maintenance</div>
+              <div class="option-item">Refund for custom-made prosthetic limb fitting</div>
+              <div class="option-item">Coverage for long-term rental of a medical ventilator</div>
+              <div class="option-item">Reimbursement for intensive neuro-rehabilitation</div>
+              <div class="option-item">Claim for hydrotherapy sessions for chronic back pain</div>
+              <div class="option-item">Refund for specialized speech therapy for stroke recovery</div>
+              <div class="option-item">Coverage for orthopedic braces and spinal corsets</div>
+
+              <div class="option-item">Refund for long-term psychiatric hospital stays</div>
+              <div class="option-item">Claim for clinical psychologist consultation cycles</div>
+              <div class="option-item">Coverage for addiction recovery and detox programs</div>
+              <div class="option-item">Reimbursement for neurofeedback therapy sessions</div>
+              <div class="option-item">Claim for pediatric occupational therapy (ERGO)</div>
+
+              <div class="option-item">Claim for high-cost orphan drugs for rare diseases</div>
+              <div class="option-item">Refund for injectable hormonal treatments</div>
+              <div class="option-item">Coverage for specialized nutritional supplements</div>
+              <div class="option-item">Reimbursement for chronic pain management patches</div>
+              <div class="option-item">Claim for preventative vaccines for immunocompromised patients</div>
+
+              <div class="option-item">Refund for helicopter emergency medical evacuation</div>
+              <div class="option-item">Claim for long-distance ambulance transfer between hospitals</div>
+              <div class="option-item">Coverage for urgent medical care while traveling overseas</div>
+              <div class="option-item">Reimbursement for mountain rescue medical fees</div>
+
+              <div class="option-item">Claim for comprehensive cardiovascular stress tests</div>
+              <div class="option-item">Refund for medically prescribed osteopathy</div>
+              <div class="option-item">Coverage for smoking cessation pharmaceutical aids</div>
+              <div class="option-item">Reimbursement for specialized melanoma skin mapping</div>
+
+              <div class="validateButton">→ VALIDATE</div>
             </div>
+          </div>
+          <div class="nextButtonContainer">
+            <button class="nextButton reasonNextButton inactive">
+              Next
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
-      <section class="centered popUpContainer">
-        <div class="popUp">
-          <div class="imgContainer">
-            <img class="closeCross" src="croix.png" alt="" />
-            <img src="business2.png" alt="" />
-          </div>
-
-          <div class="offre">
-            <div class="offreText">
-              <h2 class="offre-title offreText">
-                Save 20% on your future insurance modules
-                <span class="bold">- happiest life</span>
-              </h2>
-              <p>
-                Offer valid only on the purchase of new modules for your health
-                insurance <br />from March 12th to March 24th
-              </p>
-            </div>
-            <div class="nextButtonContainer">
-              <button onClick="window.location.reload();" class="nextButton">
-                Suite
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="dropdown form">
-        <div class="dropdown-title">
-          <h1><span>3.</span>Personnal datas</h1>
+    <section class="centered popUpContainer firtAd">
+      <div class="popUp">
+        <div class="imgContainer">
+          <img class="closeCross" src="croix.png" alt="" />
+          <img src="business2.png" alt="" />
         </div>
 
-        <div class="form-container dropdown-content">
-          <div class="container container-form closed">
-            <form>
-              <div class="question">
-                <label for="title">Title</label> <br />
-                <select id="title" type="select" placeholder="Titre" required>
-                  <option value="">Choose an option</option>
-                  <option value="M">Mr.</option>
-                  <option value="Mme">Ms.</option>
-                  <option value="Mme">Other</option>
-                  <option value="Mme">Prefer not to say</option>
-                </select>
+        <div class="offre">
+          <div class="offreText">
+            <h2 class="offre-title offreText">
+              Save 20% on your future insurance modules
+              <span class="bold">- happiest life</span>
+            </h2>
+            <p>
+              Offer valid only on the purchase of new modules for your health
+              insurance <br />from March 12th to March 24th
+            </p>
+          </div>
+          <div class="nextButtonContainer">
+            <button onClick="window.location.reload();" class="nextButton">
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dropdown form">
+      <div class="dropdown-title">
+        <h1><span>3.</span>Personnal datas</h1>
+      </div>
+
+      <div class="form-container dropdown-content">
+        <div class="container container-form closed">
+          <form>
+            <div class="question">
+              <label for="title">Title</label> <br />
+              <select class="pl" id="title" type="select" placeholder="Titre" required>
+                <option value="">Choose an option</option>
+                <option value="M">Mr.</option>
+                <option value="Mme">Ms.</option>
+                <option value="Mme">Other</option>
+                <option value="Mme">Prefer not to say</option>
+              </select>
+            </div>
+
+            <div class="question">
+              <label for="fname">First name</label> <br />
+              <input class="pl" id="fname" type="text" placeholder="Last Name" required />
+            </div>
+
+            <div class="question">
+              <label for="lname">Last Name</label> <br />
+              <input class="pl" id="lname" type="text" value="First name" required />
+            </div>
+
+            <div class="question">
+              <label for="address">Address</label> <br />
+              <div class="adress-warp">
+                <input class="pl" id="address" type="text" value="Street" required />
+                <input class="pl" id="address-number" type="text" placeholder="N°" required />
               </div>
+            </div>
 
-              <div class="question">
-                <label for="fname">Prénom</label> <br />
-                <input id="fname" type="text" placeholder="Nom" required />
-              </div>
+            <div class="question">
+              <label for="commune-select">City</label> <br />
+              <select id="commune-select" class="pl" required>
+                <option value="">-- Select an option --</option>
+              </select>
+            </div>
 
-              <div class="question">
-                <label for="lname">Nom</label> <br />
-                <input id="lname" type="text" value="Prénom" required />
-              </div>
-
-              <div class="question">
-                <label for="address">Adresse</label> <br />
-                <div class="adress-warp">
-                  <input id="address" type="text" value="Rue" required />
-                  <input
-                    id="address-number"
-                    type="text"
-                    placeholder="N°"
-                    required />
-                </div>
-              </div>
-
-              <div class="question">
-                <label for="number">Numéro de téléphone</label> <br />
-                <input
-                  type="text"
-                  id="phone-display"
-                  value="(+XX)XX XXX XX XX"
-                  readonly
-                  required />
-
-                <div class="keypad">
-                  <button type="button" value="1" class="key">1</button>
-                  <button type="button" value="2" class="key">2</button>
-                  <button type="button" value="3" class="key">3</button>
-                  <button type="button" value="4" class="key">4</button>
-                  <button type="button" value="5" class="key">5</button>
-                  <button type="button" value="6" class="key">6</button>
-                  <button type="button" value="7" class="key">7</button>
-                  <button type="button" value="8" class="key">8</button>
-                  <button type="button" value="9" class="key">9</button>
-                  <button type="button" value="0" class="key">0</button>
-                </div>
-              </div>
-
-              <div class="question">
-                <label for="commune-select">Ville</label> <br />
-                <select id="commune-select" required>
-                  <option value="">-- Sélectionnez une option --</option>
-                </select>
-              </div>
-
-              <!-- <div>
+            <!-- <div>
             <label for="license-plate">Plaque d'immatriculation</label>
             <input id="license-plate" type="number">
           </div> -->
 
-              <div class="date-container question">
-                <label for="trick-input">Date de naissance</label> <br />
-                <input
-                  type="text"
-                  id="trick-input"
-                  maxlength="7"
-                  placeholder="JMA/JMA"
-                  required />
-                <p id=" feedback"></p>
-              </div>
-
-              <div class="question">
-                <label for="email">Email</label><br />
-                <div class="email-container">
-                  <input id="email-prefix" type="email" required />
-                  <p>@</p>
-                  <input id="email-suffix" type="email" required />
-                  <input
-                    id="email-extension"
-                    required
-                    type="text"
-                    placeholder=".com"
-                    readonly />
-                  <button id="random-extension" type="button" placeholder=".ch">
-                    random
-                  </button>
-                </div>
-              </div>
-
-              <div class="question">
-                <label for="country-code">IBAN</label>
-                <div class="iban-container">
-                  <div id="country-code">
-                    <input
-                      type="text"
-                      maxlength="1"
-                      class="letter-input"
-                      placeholder="C"
-                      required />
-                    <input
-                      type="text"
-                      maxlength="1"
-                      class="letter-input"
-                      placeholder="H"
-                      required />
-                  </div>
-
-                  <div id="digits-container"></div>
-                </div>
-              </div>
-
-              <div id="feedback"></div>
-            </form>
-
-            <div class="nextButtonContainer">
-              <button class="nextButton formNextButton">Suite</button>
+            <div class="date-container question">
+              <label for="trick-input">Date of birth (Format DMY/DMY)</label> <br />
+              <input type="text" id="trick-input" maxlength="7" value="DMY/DMY" class="pl" required />
+              <p id=" feedback"></p>
             </div>
+
+            <div class="question">
+              <label for="email">Email</label><br />
+              <div class="email-container">
+                <input class="pl" id="email-prefix" type="email" placeholder="first part of your email" required />
+                <p>@</p>
+                <input id="email-suffix" type="email" class="pl" value="second part of your email" required />
+                <input id="email-extension" required class="pl" type="text" placeholder=".com" readonly />
+                <button id="random-extension" type="button" placeholder=".ch">
+                  random
+                </button>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="country-code">IBAN</label>
+              <div class="iban-container">
+                <div id="country-code">
+                  <input class="pl" type="text" maxlength="1" class="letter-input" placeholder="C" required />
+                  <input class="pl" type="text" maxlength="1" class="letter-input" placeholder="H" required />
+                </div>
+
+                <div id="digits-container"></div>
+              </div>
+            </div>
+
+            <div class="question">
+              <label for="number">Phone Number</label> <br />
+              <input type="text" id="phone-display" class="pl" value="(+XX)XX XXX XX XX" readonly required />
+
+              <div class="keypad">
+                <button type="button" value="1" class="key">1</button>
+                <button type="button" value="2" class="key">2</button>
+                <button type="button" value="3" class="key">3</button>
+                <button type="button" value="4" class="key">4</button>
+                <button type="button" value="5" class="key">5</button>
+                <button type="button" value="6" class="key">6</button>
+                <button type="button" value="7" class="key">7</button>
+                <button type="button" value="8" class="key">8</button>
+                <button type="button" value="9" class="key">9</button>
+                <button type="button" value="0" class="key">0</button>
+              </div>
+            </div>
+
+            <div id="feedback"></div>
+          </form>
+
+          <div class="nextButtonContainer">
+            <button class="nextButton formNextButton">Next</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="dropdown disclaimer">
-        <div class="dropdown-title">
-          <h1><span>5.</span>Disclaimer</h1>
-        </div>
+    <div class="dropdown disclaimer">
+      <div class="dropdown-title">
+        <h1><span>5.</span>Disclaimer</h1>
+      </div>
 
-        <div class="conditionContainer dropdown-content">
-          <div class="container condition-container closed">
-            <div class="conditionFooter">
-              <p>Acceptez les conditions pour continuer</p>
-            </div>
-            <div class="conditionContent">
-              <p>
-                <strong
-                  >CONVENTIONS SPÉCIALES : CONTRAT D'ASSURANCE MULTIRISQUE
-                  INTÉGRALE (RÉF. AX-990-BIS) TITRE PREMIER : DU CADRE JURIDIQUE
-                  ET DES DÉFINITIONS PRÉALABLES</strong
-                >
-                <br /><br />
+      <div class="conditionContainer dropdown-content">
+        <div class="container condition-container closed">
+          <div class="conditionFooter">
+            <p>Acceptez les conditions pour continuer</p>
+          </div>
+          <div class="conditionContent">
+            <p>
+              <strong>CONVENTIONS SPÉCIALES : CONTRAT D'ASSURANCE MULTIRISQUE
+                INTÉGRALE (RÉF. AX-990-BIS) TITRE PREMIER : DU CADRE JURIDIQUE
+                ET DES DÉFINITIONS PRÉALABLES</strong>
+              <br /><br />
 
-                Article 1.1 : Champ d'application des définitions Aux fins de
-                l'interprétation des présentes, les termes définis ci-après,
-                qu'ils soient employés au singulier ou au pluriel, prévalent sur
-                toute définition usuelle, dictionnaire de langue française ou
-                usage professionnel, nonobstant toute disposition contraire
-                figurant dans les Conditions Particulières, sauf dérogation
-                expresse et écrite signée par un mandataire social de la
-                Compagnie. Sinistre : Tout événement non intentionnel de la part
-                de l'Assuré, présentant un caractère aléatoire, soudain et
-                imprévisible, trouvant sa cause déterminante dans un fait
-                générateur unique, sous réserve des exclusions stipulées aux
-                Articles 4.2.1 à 4.2.8. Tiers : Toute personne physique ou
-                morale autre que l'Assuré, son conjoint non séparé de corps, ses
-                ascendants ou descendants en ligne directe, ainsi que toute
-                personne préposée à son service dans l'exercice de ses
-                fonctions. <br /><br />
+              Article 1.1 : Champ d'application des définitions Aux fins de
+              l'interprétation des présentes, les termes définis ci-après,
+              qu'ils soient employés au singulier ou au pluriel, prévalent sur
+              toute définition usuelle, dictionnaire de langue française ou
+              usage professionnel, nonobstant toute disposition contraire
+              figurant dans les Conditions Particulières, sauf dérogation
+              expresse et écrite signée par un mandataire social de la
+              Compagnie. Sinistre : Tout événement non intentionnel de la part
+              de l'Assuré, présentant un caractère aléatoire, soudain et
+              imprévisible, trouvant sa cause déterminante dans un fait
+              générateur unique, sous réserve des exclusions stipulées aux
+              Articles 4.2.1 à 4.2.8. Tiers : Toute personne physique ou
+              morale autre que l'Assuré, son conjoint non séparé de corps, ses
+              ascendants ou descendants en ligne directe, ainsi que toute
+              personne préposée à son service dans l'exercice de ses
+              fonctions. <br /><br />
 
-                <strong>TITRE II : DES GARANTIES ET DE LA SUBROGATION</strong>
-                <br />
-                Article 2.4 : Modalités de mise en œuvre de la garantie «
-                Dommages Immatériels Non Consécutifs » La garantie ne s'exerce
-                qu'après épuisement des franchises prévues au tableau des
-                garanties annexé aux présentes, et sous réserve que l'Assuré
-                apporte la preuve formelle du lien de causalité direct et
-                exclusif entre l'événement générateur et le préjudice pécuniaire
-                subi. Par dérogation aux dispositions de l'Article L. 121-12 du
-                Code des Assurances, l'Assureur est subrogé, à concurrence de
-                l'indemnité payée par lui, dans les droits et actions de
-                l'Assuré contre tout tiers responsable. <br />
-                Toutefois, cette subrogation ne saurait s'appliquer si le tiers
-                responsable est un descendant, un ascendant, un allié en ligne
-                directe de l'Assuré, ou toute personne vivant habituellement au
-                foyer de l'Assuré, sauf en cas de malveillance caractérisée ou
-                d'implication d'un véhicule terrestre à moteur tel que défini
-                par la Loi n° 85-677 du 5 juillet 1985. <br /><br />
+              <strong>TITRE II : DES GARANTIES ET DE LA SUBROGATION</strong>
+              <br />
+              Article 2.4 : Modalités de mise en œuvre de la garantie «
+              Dommages Immatériels Non Consécutifs » La garantie ne s'exerce
+              qu'après épuisement des franchises prévues au tableau des
+              garanties annexé aux présentes, et sous réserve que l'Assuré
+              apporte la preuve formelle du lien de causalité direct et
+              exclusif entre l'événement générateur et le préjudice pécuniaire
+              subi. Par dérogation aux dispositions de l'Article L. 121-12 du
+              Code des Assurances, l'Assureur est subrogé, à concurrence de
+              l'indemnité payée par lui, dans les droits et actions de
+              l'Assuré contre tout tiers responsable. <br />
+              Toutefois, cette subrogation ne saurait s'appliquer si le tiers
+              responsable est un descendant, un ascendant, un allié en ligne
+              directe de l'Assuré, ou toute personne vivant habituellement au
+              foyer de l'Assuré, sauf en cas de malveillance caractérisée ou
+              d'implication d'un véhicule terrestre à moteur tel que défini
+              par la Loi n° 85-677 du 5 juillet 1985. <br /><br />
 
-                <strong
-                  >TITRE III : DES EXCLUSIONS GÉNÉRALES ET PARTICULIÈRES</strong
-                >
-                <br />
-                Article 3.2 : Exclusions relatives à la nature des biens Sont
-                formellement exclus de toute prise en charge, sans que cette
-                liste ne puisse être considérée comme limitative : Les dommages
-                résultant de l'usure lente, de la vétusté, de l'oxydation, de la
-                corrosion, de l'incrustation de calcaire ou de tout phénomène
-                climatique à évolution lente n'ayant pas le caractère d'un
-                événement naturel d'intensité anormale au sens de la législation
-                sur les catastrophes naturelles. Les pertes subies par l'Assuré
-                du fait de la privation de jouissance, de la dépréciation
-                vénale, ou de toute interruption d'activité, sauf si une option
-                « Pertes d'Exploitation » a été souscrite et validée par un
-                avenant spécifique conforme aux stipulations de l'Article 7.4.
-                Les dommages causés par des micro-organismes, moisissures,
-                spores ou toutes particules fongiques, quand bien même ceux-ci
-                résulteraient d'un dégât des eaux garanti, si ledit dégât n'a
-                pas été déclaré dans un délai de quarante-huit (48) heures
-                ouvrées. <br /><br />
+              <strong>TITRE III : DES EXCLUSIONS GÉNÉRALES ET PARTICULIÈRES</strong>
+              <br />
+              Article 3.2 : Exclusions relatives à la nature des biens Sont
+              formellement exclus de toute prise en charge, sans que cette
+              liste ne puisse être considérée comme limitative : Les dommages
+              résultant de l'usure lente, de la vétusté, de l'oxydation, de la
+              corrosion, de l'incrustation de calcaire ou de tout phénomène
+              climatique à évolution lente n'ayant pas le caractère d'un
+              événement naturel d'intensité anormale au sens de la législation
+              sur les catastrophes naturelles. Les pertes subies par l'Assuré
+              du fait de la privation de jouissance, de la dépréciation
+              vénale, ou de toute interruption d'activité, sauf si une option
+              « Pertes d'Exploitation » a été souscrite et validée par un
+              avenant spécifique conforme aux stipulations de l'Article 7.4.
+              Les dommages causés par des micro-organismes, moisissures,
+              spores ou toutes particules fongiques, quand bien même ceux-ci
+              résulteraient d'un dégât des eaux garanti, si ledit dégât n'a
+              pas été déclaré dans un délai de quarante-huit (48) heures
+              ouvrées. <br /><br />
 
-                <strong
-                  >TITRE IV : DE LA DÉCLARATION ET DE L'INSTRUCTION DU
-                  SINISTRE</strong
-                ><br />
-                Article 4.5 : Formalisme de la preuve et expertise En cas de
-                sinistre, l'Assuré est tenu, sous peine de déchéance de garantie
-                si le retard cause un préjudice à la Compagnie, de fournir un
-                état estimatif des pertes, certifié par un expert indépendant
-                inscrit sur la liste nationale des experts agréés, dont les
-                honoraires resteront à la charge exclusive de l'Assuré, sauf
-                mention contraire aux Conditions Particulières. L'Assuré devra
-                justifier de l'existence
-                <span
-                  ><i>J'accepte les conditions</i
-                  ><input class="checkBoxInput" type="checkbox"
-                /></span>
-                et de la valeur des biens par tous moyens de preuve probants,
-                notamment : factures d'achat originales (les tickets de caisse
-                thermique ne sont pas admis après un délai de 6 mois pour cause
-                d'effacement de l'encre), inventaires notariés, ou certificats
-                d'authenticité émanant d'organismes certifiés ISO 9001.
-                <br /><br />
+              <strong>TITRE IV : DE LA DÉCLARATION ET DE L'INSTRUCTION DU
+                SINISTRE</strong><br />
+              Article 4.5 : Formalisme de la preuve et expertise En cas de
+              sinistre, l'Assuré est tenu, sous peine de déchéance de garantie
+              si le retard cause un préjudice à la Compagnie, de fournir un
+              état estimatif des pertes, certifié par un expert indépendant
+              inscrit sur la liste nationale des experts agréés, dont les
+              honoraires resteront à la charge exclusive de l'Assuré, sauf
+              mention contraire aux Conditions Particulières. L'Assuré devra
+              justifier de l'existence
+              <span><i>J'accepte les conditions</i><input class="checkBoxInput" type="checkbox" /></span>
+              et de la valeur des biens par tous moyens de preuve probants,
+              notamment : factures d'achat originales (les tickets de caisse
+              thermique ne sont pas admis après un délai de 6 mois pour cause
+              d'effacement de l'encre), inventaires notariés, ou certificats
+              d'authenticité émanant d'organismes certifiés ISO 9001.
+              <br /><br />
 
-                <strong
-                  >TITRE V : DE LA RÉSILIATION ET DES DÉLAIS DE RECOURS</strong
-                >
-                <br />
-                Article 5.1 : Préavis et tacite reconduction Le présent contrat
-                est conclu pour une durée d'un an à compter de la date d'effet
-                mentionnée aux Conditions Particulières. Il se renouvelle par
-                tacite reconduction, pour des périodes successives d'un an, à
-                chaque date anniversaire, sauf dénonciation par l'une ou l'autre
-                des parties, notifiée par lettre recommandée avec accusé de
-                réception, adressée au siège social de la Compagnie au moins
-                deux (2) mois avant la date d'échéance. Conformément à l'Article
-                L. 113-15-1 du Code des Assurances (Loi Châtel), l'Assuré
-                dispose toutefois d'un délai de vingt (20) jours à compter de la
-                date d'envoi de l'avis d'échéance pour dénoncer la reconduction
-                du contrat, le cachet de la poste faisant foi de la date d'envoi
-                de ladite notification de la Compagnie.
-              </p>
-            </div>
-            <div class="nextButtonContainer">
-              <button class="nextButton ConditionsNextButton inactive">
-                Suite
-              </button>
-            </div>
+              <strong>TITRE V : DE LA RÉSILIATION ET DES DÉLAIS DE RECOURS</strong>
+              <br />
+              Article 5.1 : Préavis et tacite reconduction Le présent contrat
+              est conclu pour une durée d'un an à compter de la date d'effet
+              mentionnée aux Conditions Particulières. Il se renouvelle par
+              tacite reconduction, pour des périodes successives d'un an, à
+              chaque date anniversaire, sauf dénonciation par l'une ou l'autre
+              des parties, notifiée par lettre recommandée avec accusé de
+              réception, adressée au siège social de la Compagnie au moins
+              deux (2) mois avant la date d'échéance. Conformément à l'Article
+              L. 113-15-1 du Code des Assurances (Loi Châtel), l'Assuré
+              dispose toutefois d'un délai de vingt (20) jours à compter de la
+              date d'envoi de l'avis d'échéance pour dénoncer la reconduction
+              du contrat, le cachet de la poste faisant foi de la date d'envoi
+              de ladite notification de la Compagnie.
+            </p>
+          </div>
+          <div class="nextButtonContainer">
+            <button class="nextButton ConditionsNextButton inactive">
+              Next
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
-      <section class="centered popUpContainer">
-        <div class="popUp">
-          <div class="imgContainer">
-            <img class="closeCross" src="croix.png" alt="" />
-            <img src="business2.png" alt="" />
+    <div class="dropdown robot">
+      <div class="dropdown-title">
+        <h1><span>6.</span>Are you a robot</h1>
+      </div>
+
+      <div class="dropdown-content">
+        <div class="container robot-container closed centered">
+          <div class="conditionFooter">
+            <p>Réorganisez les pièces pour reformer l'image</p>
+          </div>
+          <div class="captcha-container">
+            <div id="puzzle-grid" class="grid"></div>
+
+            <div class="captcha-header"></div>
           </div>
 
-          <div class="offre">
-            <div class="offreText">
-              <h2 class="offre-title offreText">
-                Save 20% on your future insurance modules
-                <span class="bold">- happiest life</span>
-              </h2>
-              <p>
-                Offer valid only on the purchase of new modules for your health
-                insurance <br />from March 12th to March 24th
-              </p>
-            </div>
-            <div class="nextButtonContainer">
-              <button onClick="window.location.reload();" class="nextButton">
-                Suite
-              </button>
-            </div>
+          <button id="verify-btn" class="captcha-btn" disabled></button>
+          <div class="nextButtonContainer">
+            <button class="nextButton capNextButton inactive">Next</button>
           </div>
         </div>
-      </section>
 
-      <div class="dropdown robot">
-        <div class="dropdown-title">
-          <h1><span>6.</span>Are you a robot</h1>
-        </div>
-
-        <div class="dropdown-content">
-          <div class="container robot-container closed centered">
-            <div class="conditionFooter">
-              <p>Réorganisez les pièces pour reformer l'image</p>
-            </div>
-            <div class="captcha-container">
-              <div id="puzzle-grid" class="grid"></div>
-
-              <div class="captcha-header"></div>
-            </div>
-
-            <button id="verify-btn" class="captcha-btn" disabled></button>
-            <div class="nextButtonContainer">
-              <button class="nextButton capNextButton inactive">Suite</button>
-            </div>
-          </div>
-
-          <!-- <div class="container closed centered">
+        <!-- <div class="container closed centered">
                <div class="captcha-container">
                 <div class="captcha-header">
                   <span class="shield-icon">🛡️</span>
@@ -943,50 +488,48 @@
               <button id="verify-btn" class="captcha-btn disabled" disabled></button>
             </div>
             <div class="nextButtonContainer">
-                <button class="nextButton capNextButton inactive">Suite</button>
+                <button class="nextButton capNextButton inactive">Next</button>
             </div> -->
-        </div>
+      </div>
+    </div>
+
+    <div class="dropdown electronic-signature">
+      <div class="dropdown-title">
+        <h1><span>7.</span>Electronic Signature</h1>
       </div>
 
-      <div class="dropdown electronic-signature">
-        <div class="dropdown-title">
-          <h1><span>7.</span>Electronic Signature</h1>
-        </div>
-
-        <div class="dropdown-content">
-          <div class="container signature-container closed centered">
-            <div class="conditionFooter">
-              <p>Signez dans le champ ci-dessous</p>
-            </div>
-            <div class="signature-wrapper">
-              <canvas id="sig-canvas" width="500" height="200"></canvas>
-            </div>
-            <div class="nextButtonContainer">
-              <button class="nextButton signatureNextButton">Suite</button>
-            </div>
+      <div class="dropdown-content">
+        <div class="container signature-container closed centered">
+          <div class="conditionFooter">
+            <p>Sign on the box under</p>
+          </div>
+          <div class="signature-wrapper">
+            <canvas id="sig-canvas" width="500" height="200"></canvas>
+          </div>
+          <div class="nextButtonContainer">
+            <button class="nextButton signatureNextButton">Next</button>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="centered lastSection">
-        <a
-          href="GetInTouch.zip"
-          download="GetInTouch.zip"
-          class="nextButton download-btn inactive">
-          Get in Touch
-        </a>
-      </div>
-    </section>
+    <div class="centered lastSection">
+      <a href="GetInTouch.zip" download="GetInTouch.zip" class="nextButton download-btn inactive">
+        Get in touch to finalize
+      </a>
+    </div>
+  </section>
 
 
 
-    <script type="module" src="src/js/main.js"></script>
-    <script src="src/js/popUp.js"></script>
-    <script src="src/js/ageCheck.js"></script>
-    <script src="src/js/reasonList.js"></script>
-    <script src="src/js/checkConditions.js"></script>
-    <script src="src/js/form.js"></script>
-    <script src="src/js/captcha.js"></script>
-    <script src="src/js/stylo.js"></script>
-  </body>
+  <script type="module" src="src/js/main.js"></script>
+  <script src="src/js/popUp.js"></script>
+  <script src="src/js/ageCheck.js"></script>
+  <script src="src/js/reasonList.js"></script>
+  <script src="src/js/checkConditions.js"></script>
+  <script src="src/js/form.js"></script>
+  <script src="src/js/captcha.js"></script>
+  <script src="src/js/stylo.js"></script>
+</body>
+
 </html>
