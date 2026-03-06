@@ -10,7 +10,7 @@ const validateButton = document.querySelector(".validateButton");
 const reasonNextButton = document.querySelector(".nextButton");
 
 const reasonCurrentSection = document.querySelector(".reason-selection");
-const reasonNextSection = document.querySelector(".form")
+const reasonNextSection = document.querySelector(".form");
 
 // scrollList.addEventListener(
 //     "wheel",
@@ -23,41 +23,42 @@ const reasonNextSection = document.querySelector(".form")
 // );
 
 optionItems.forEach((item) => {
-    item.addEventListener("click", () => {
-        optionItems.forEach((i) => {
-            i.classList.remove("option-item-active");
-            i.classList.add("option-item");
-        });
-        item.classList.toggle("option-item");
-        item.classList.toggle("option-item-active");
-
-        if (item.classList.contains("option-item-active")) {
-            validateButton.classList.add("validateButtonActive");
-        }
+  item.addEventListener("click", () => {
+    optionItems.forEach((i) => {
+      i.classList.remove("option-item-active");
+      i.classList.add("option-item");
     });
+    item.classList.toggle("option-item");
+    item.classList.toggle("option-item-active");
+
+    if (item.classList.contains("option-item-active")) {
+      console.log("active");
+      validateButton.classList.add("validateButtonActive");
+    }
+  });
 });
 
 dropDownButton.addEventListener("click", () => {
-    scrollList.classList.toggle("fake-options-list-open");
-    arrow.classList.toggle("arrowUp");
+  scrollList.classList.toggle("fake-options-list-open");
+  // arrow.classList.toggle("arrowUp");
 });
 
 validateButton.addEventListener("click", () => {
-    optionItems.forEach((i) => {
-        if (i.classList.contains("option-item-active")) {
-            validation(i.innerHTML);
-        }
-    });
+  optionItems.forEach((i) => {
+    if (i.classList.contains("option-item-active")) {
+      validation(i.innerHTML);
+    }
+  });
 });
 
 function validation(choix) {
-    scrollList.classList.toggle("fake-options-list-open");
-    arrow.classList.toggle("arrowUp");
-    choice.innerHTML = choix;
-    nextButton.classList.add("nextButtonActive");
+  scrollList.classList.toggle("fake-options-list-open");
+  // arrow.classList.toggle("arrowUp");
+  choice.innerHTML = choix;
+  nextButton.classList.add("nextButtonActive");
 }
 
 reasonNextButton.addEventListener("click", () => {
-    reasonNextSection.classList.remove("closed");
-    reasonCurrentSection.classList.add("closed");
-})
+  reasonNextSection.classList.remove("closed");
+  reasonCurrentSection.classList.add("closed");
+});

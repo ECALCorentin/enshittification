@@ -2,6 +2,11 @@
     scroll-behavior: smooth;
 }
 
+body{
+    display:flex;
+    flex-direction: column;
+}
+
 html, body, #app, * {
   font-family: 'Inter', sans-serif !important;
   color: #110D5E;
@@ -130,21 +135,21 @@ h1,h2,h3,h4,h5,a,p,button{
     background-color: #232b62;
 } */
 
-/* .validateButton{
+.validateButton{
     padding: 10px;
     border-bottom: 1px solid #eee;
     font-size: 0.9em;
     white-space: nowrap;
-} */
+}
 
-/* .validateButtonActive{
+.validateButtonActive{
     padding: 10px;
     border-bottom: 1px solid #eee;
     font-size: 0.9em;
     white-space: nowrap;
     background-color: #232b62;
     color:white;
-} */
+}
 
 /* button {
     width: 20%;
@@ -248,11 +253,15 @@ h1{
 
 /* NOUVEAUTés */
 
+.dropdown{
+    margin-bottom: 24px;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 64px 20px 20px 20px;
     background-color: #F9F9F9;
 }
 
@@ -279,4 +288,14 @@ h1{
 
 .nextButton:hover{
     background: #008ec6;
+}
+
+.content{
+    gap: 32px;
+}
+
+.checkbox{
+    border: 1px solid #05A3E0;
+    border-radius: 5px;
+    margin-bottom: 16px;
 }
